@@ -1,2 +1,0 @@
-2019-08-28 08:55:46.9482 Integration > Cursos: FAILED! > No se puede resolver el nombre remoto: 'webdesarrollo.camarco.org.ar'
-2019-08-28 11:01:47.7068 Integration > Cursos: FAILED! > No es posible conectar con el servidor remoto

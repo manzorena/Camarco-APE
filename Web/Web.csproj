@@ -40,10 +40,11 @@
     <Reference Include="microsoft.crm.sdk, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\microsoft.crm.sdk.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="microsoft.crm.sdktypeproxy, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\microsoft.crm.sdktypeproxy.dll</HintPath>
+      <HintPath>bin\microsoft.crm.sdktypeproxy.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\Newtonsoft.Json.dll</HintPath>
@@ -91,12 +92,11 @@
     <Compile Include="Areas\Adm\Controllers\LoginController.cs" />
     <Compile Include="Areas\Adm\Controllers\ResourceController.cs" />
     <Compile Include="Areas\Adm\Controllers\SeccionController.cs" />
+    <Compile Include="Controllers\APEController.cs" />
     <Compile Include="Controllers\CapacitacionController.cs" />
     <Compile Include="Controllers\EspacioPymeActualController.cs" />
     <Compile Include="Controllers\TransparenciaController.cs" />
-    <Compile Include="Descargas\Controllers\Encrypt_Methods\IRSAMethod.cs" />
     <Compile Include="Descargas\Controllers\FileController.cs" />
-    <Compile Include="Descargas\Controllers\Encrypt_Methods\RSAMethod.cs" />
     <Compile Include="Descargas\Controllers\SearchController.cs" />
     <Compile Include="Descargas\Controllers\SessionController.cs" />
     <Compile Include="Descargas\Controllers\TemplatesController.cs" />
@@ -158,13 +158,23 @@
     <Content Include="Areas\Adm\Views\Seccion\Template.ascx" />
     <Content Include="Areas\Adm\Views\Shared\CategoriasJSON.ascx" />
     <Content Include="Areas\Adm\Views\Shared\CategoriasSELECT.ascx" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-responsive.css" />
+    <Content Include="Content\bootstrap-responsive.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\CSS\Back\accesodirecto-edit.png" />
     <Content Include="Content\CSS\Back\btn-waiting.gif" />
     <Content Include="Content\CSS\Back\logo-login.png" />
     <Content Include="Content\CSS\Back\logo-admin.png" />
+    <Content Include="Content\CSS\Front\css\APE.css" />
     <Content Include="Content\CSS\Front\css\camarco-screen.css" />
     <Content Include="Content\CSS\Front\css\extras.css" />
     <Content Include="Content\CSS\Front\css\modules.css" />
+    <Content Include="Content\CSS\Front\imagenes\logo.png" />
     <Content Include="Content\CSS\Front\fonts\Roboto\LICENSE.txt" />
     <Content Include="Content\CSS\Front\imagenes\00_preloader.gif" />
     <Content Include="Content\CSS\Front\imagenes\adobe-reader.png" />
@@ -217,6 +227,8 @@
     <Content Include="Content\CSS\Front\imagenes\espacio-pyme-secciones-checkboxes.png" />
     <Content Include="Content\CSS\Front\imagenes\feedly.png" />
     <Content Include="Content\CSS\Front\imagenes\filetypes.png" />
+    <Content Include="Content\CSS\Front\imagenes\glyphicons-halflings-white.png" />
+    <Content Include="Content\CSS\Front\imagenes\glyphicons-halflings.png" />
     <Content Include="Content\CSS\Front\imagenes\home-banner-pyme.jpg" />
     <Content Include="Content\CSS\Front\imagenes\home-banner-socios.jpg" />
     <Content Include="Content\CSS\Front\imagenes\home-noticias-dummy.jpg" />
@@ -253,6 +265,12 @@
     <Content Include="Content\CSS\Front\imagenes\ui-radio.png" />
     <Content Include="Content\CSS\Front\imagenes\ui-tags-arrow-white.png" />
     <Content Include="Content\CSS\Front\imagenes\ui-tags-arrow.png" />
+    <Content Include="Content\imagenes\glyphicons-halflings-white.png" />
+    <Content Include="Content\imagenes\glyphicons-halflings.png" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\datetimepicker-master\index.html" />
     <Content Include="Content\CSS\Back\jquery.datetimepicker.css" />
     <Content Include="Scripts\datetimepicker-master\jquery.datetimepicker.js" />
@@ -280,6 +298,7 @@
     <Content Include="Scripts\PruebaCRMCamarco.js" />
     <Content Include="Scripts\slider-ep.js" />
     <Content Include="Scripts\slider.js" />
+    <Content Include="Views\APE\Vista_APE.aspx" />
     <Content Include="Views\Capacitacion\Capacitacion.aspx" />
     <Content Include="Views\Inscripcion5.aspx" />
     <Content Include="Views\Search\AgendaFilterArticulos.aspx" />
@@ -298,11 +317,13 @@
     <Content Include="Views\Shared\ArticuloMultimedia.ascx" />
     <Content Include="Views\Shared\Banners\BannerAsociese.ascx" />
     <Content Include="Views\Shared\Banners\BannerSepyme.ascx" />
+    <Content Include="Views\Shared\ListTematicasApe.ascx" />
     <Content Include="Views\Shared\BreadCrumb.ascx" />
     <Content Include="Views\Shared\BreadCrumbExtended.ascx" />
     <Content Include="Views\Shared\EspacioPymeSecciones.ascx" />
     <Content Include="Views\Shared\Hola Nico.ascx" />
     <Content Include="Views\Shared\HolaLogo.ascx" />
+    <Content Include="Views\Shared\NoticiasResumenApe.ascx" />
     <Content Include="Views\Shared\NoticiasResumenEP.ascx" />
     <Content Include="Views\Shared\FooterEPAccesosDirectos.ascx" />
     <Content Include="Views\Shared\FooterEP.ascx" />
@@ -781,6 +802,7 @@
     <None Include="Content\INDICACIONES PARA LAS CONFERENCIAS y CURSOS ONLINE.pdf" />
     <None Include="Content\Static\CREDITO FISCAL.pdf" />
     <None Include="Descargas\INDICACIONES PARA LAS CONFERENCIAS y CURSOS ONLINE.pdf" />
+    <Content Include="Scripts\bootstrap-4.4.1-dist.zip" />
     <None Include="Scripts\datetimepicker-master\.gitignore" />
     <None Include="Scripts\datetimepicker-master\bower.json" />
     <None Include="Scripts\datetimepicker-master\datetimepicker.jquery.json" />
@@ -878,6 +900,7 @@
   <ItemGroup>
     <Folder Include="Logs\" />
     <Folder Include="Uploads\" />
+    <Folder Include="Views\App_LocalResources\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\Back.Master" />
@@ -961,7 +984,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>57451</DevelopmentServerPort>
+          <DevelopmentServerPort>52783</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost/Web</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

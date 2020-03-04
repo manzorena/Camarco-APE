@@ -32,10 +32,11 @@
         <!--<a href="/EspacioPyme" title="Ingresar al Espacio PYME" class="banner" ><img src="/Content/CSS/Front/imagenes/home-banner-pyme.jpg" width="300" height="154" alt="Espacio Pyme"/></a>-->
         <!-- FIN BANNER -->
         <!-- BANNER -->
-        <a href="http://www.camarco.org.ar/noticias-generales-de-la-camara/4o-premio-latinoamericano-de-responsabilidad-social-empresarial-fiic" title="4º PREMIO LATINOAMERICANO DE RESPONSABILIDAD SOCIAL EMPRESARIAL FIIC" class="banner" ><img src="/Content/CSS/Front/imagenes/Flyer 4to. Premio RSE.png" width="300" height="388" alt="4º PREMIO LATINOAMERICANO DE RESPONSABILIDAD SOCIAL EMPRESARIAL FIIC"/></a>
-	    <br/>
-        <a href="/Institucional" title="Beneficios de ser socio de la Cámara Argentina de la Construcción" class="banner" ><img src="/Content/CSS/Front/imagenes/home-banner-socios.jpg" width="300" height="154" alt="Beneficios de ser socio de la Cámara Argentina de la Construcción"/></a>
+        <!--<a href="http://www.camarco.org.ar/noticias-generales-de-la-camara/4o-premio-latinoamericano-de-responsabilidad-social-empresarial-fiic" title="4º PREMIO LATINOAMERICANO DE RESPONSABILIDAD SOCIAL EMPRESARIAL FIIC" class="banner" ><img src="/Content/CSS/Front/imagenes/Flyer 4to. Premio RSE.png" width="300" height="388" alt="4º PREMIO LATINOAMERICANO DE RESPONSABILIDAD SOCIAL EMPRESARIAL FIIC"/></a> -->
         <a href="http://www.convocatoriatiic.camarco.org.ar/" title="Postulate a TIIC" class="banner" ><img src="/Content/CSS/Front/imagenes/Aviso_Home_ConvocatoriaTIIC.jpg" width="300" height="154" alt="Postulate a TIIC"/></a>
+        <br/>
+        <a href="/Institucional" title="Beneficios de ser socio de la Cámara Argentina de la Construcción" class="banner" ><img src="/Content/CSS/Front/imagenes/home-banner-socios.jpg" width="300" height="154" alt="Beneficios de ser socio de la Cámara Argentina de la Construcción"/></a>
+        
         <!-- FIN BANNER -->
         <div class="newsletter-form1 importante">
     	<h3>SUSCR&Iacute;BASE AL NEWSLETTER</h3>

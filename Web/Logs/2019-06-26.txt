@@ -1,1 +1,1 @@
-2019-06-26 12:11:15.9006 Integration > Cursos: FAILED! > No se puede resolver el nombre remoto: 'webdesarrollo.camarco.org.ar'
+2019-06-26 12:46:14.5701 Integration > Cursos: FAILED! > Unable to connect to the remote server

@@ -239,4 +239,7 @@ _Pvt_Extensions
 /Dashboard-Ejecutivo/obj/Debug/netcoreapp2.1
 /Dashboard-Ejecutivo/bin/Debug/netcoreapp2.1
 /Dashboard-Ejecutivo/obj
+# wwwRoot Angualr 2 libs
+src/ASP.NET-Core-SPAs/wwwroot/Angular/lib/
+*.js
 *.map

@@ -1,0 +1,1 @@
+2020-02-12 09:05:57.0300 Integration > Cursos: FAILED! > Unable to connect to the remote server

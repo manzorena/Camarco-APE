@@ -7,7 +7,7 @@ using System.Data;
 namespace Camarco.Model
 {
 	public class Seccion
-	                    {
+	{
 		public bool ModelValidated = false;
 
 		public int SeccionID
@@ -105,12 +105,6 @@ namespace Camarco.Model
 			get;
 			set;
 		}
-        
-        public List<SeccionDocumento> SeccionDocumentos 
-        {
-            get; 
-            set; 
-        }
 
 		public Seccion()
 		{
@@ -129,7 +123,6 @@ namespace Camarco.Model
 			this.Archivos = new List<SeccionArchivo>();
 			this.TituloPagina = "";
 			this.EspacioPyme = false;
-            this.SeccionDocumentos = new List<SeccionDocumento>();
 		}
 
 		public Seccion(int pSID) : this()
@@ -160,7 +153,6 @@ namespace Camarco.Model
 					this.EspacioPyme = (dR["EspacioPyme"] != DBNull.Value && (byte)dR["EspacioPyme"] == 1);
 					this.Destacados = new List<SeccionDestacado>();
 					this.Archivos = new List<SeccionArchivo>();
-                    this.SeccionDocumentos = new List<SeccionDocumento>();
 					ds.Clear();
 				}
 			}
@@ -184,35 +176,6 @@ namespace Camarco.Model
 				}
 			}
 		}
-
-        public void LoadSeccionDocumentos()
-        {
-            using (DBHelper dbHelper = new DBHelper())
-            {
-                using (DataSet ds = dbHelper.RunSPReturnDataSet("Seccion_GetDocumentos", false, new customParameter[]
-				{
-					dbHelper.MP("@SeccionID", SqlDbType.Int, this.SeccionID.ToString())
-				}))
-                {
-                    foreach (DataRow dR in ds.Tables[0].Rows)
-                    {
-                        this.SeccionDocumentos.Add(new SeccionDocumento()
-                        {
-                            FileID = (int)dR["FileID"],
-                            DocumentoID = (int)dR["DocumentoID"],
-                            Descripcion = (string)dR["Descripcion"],
-                            FechaModificacion = (DateTime)dR["FechaModificacion"],
-                            Titulo = (string)dR["Titulo"],
-                            Publico = (byte)dR["Publico"]==1?true:false,
-                            ResourceID = (int)dR["ResourceID"],
-                            ResourceURL = (string)dR["URL"]
-                        });
-
-                    }
-                    ds.Clear();
-                }
-            }
-        }
 
         public void LoadDestacadosSeccion(int seccionID)
         {

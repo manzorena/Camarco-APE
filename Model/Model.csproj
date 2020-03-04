@@ -37,6 +37,7 @@
     <Reference Include="microsoft.crm.sdk, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\microsoft.crm.sdk.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="microsoft.crm.sdktypeproxy, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
@@ -53,19 +54,18 @@
   <ItemGroup>
     <Compile Include="AccesoDirecto.cs" />
     <Compile Include="AccesoDirectoLink.cs" />
-    <Compile Include="Adhesion_form.cs" />
     <Compile Include="Articulo.cs" />
     <Compile Include="ArticuloArchivo.cs" />
     <Compile Include="ArticuloImagen.cs" />
     <Compile Include="ArticuloManager.cs" />
     <Compile Include="ArticuloModel.cs" />
-    <Compile Include="consultas_form.cs" />
+    <Compile Include="ResourceManager1.cs" />
+    <Compile Include="TematicasApe.cs" />
     <Compile Include="crmserviceutility.cs" />
     <Compile Include="Curso.cs" />
     <Compile Include="Cursos.cs" />
     <Compile Include="Delegacion.cs" />
     <Compile Include="Delegaciones.cs" />
-    <Compile Include="denuncia_form.cs" />
     <Compile Include="Documento.cs" />
     <Compile Include="DocumentoCategoria.cs" />
     <Compile Include="DocumentoManager.cs" />
@@ -85,7 +85,6 @@
     <Compile Include="Seccion.cs" />
     <Compile Include="SeccionArchivo.cs" />
     <Compile Include="SeccionDestacado.cs" />
-    <Compile Include="SeccionDocumento.cs" />
     <Compile Include="Secciones.cs" />
     <Compile Include="Tematicas.cs" />
     <Compile Include="Usuario.cs" />
@@ -101,7 +100,9 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

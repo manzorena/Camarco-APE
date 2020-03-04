@@ -9,7 +9,7 @@
         }
         if (Model == (int)Camarco.Model.ResourceType.ARTICULO)
         {
-            if (c.Template != 1 && c.Template != 2 && c.Template != 4 && c.Template != 6) continue;
+            if (c.Template != 1 && c.Template != 2 && c.Template != 4 && c.Template != 6 && c.Template != 8) continue;
         }
         retval.Add("{id:" + c.SeccionID + ",nombre:'" + (c.Parent != null ? c.Parent.Nombre + ">" : "") + c.Nombre + "', parentS:" + (c.Parent == null ? "false" : "true") + "}");
     }

@@ -231,8 +231,10 @@
         theme: "advanced",
         plugins: "preview,paste,fullscreen,visualchars,nonbreaking,autolink",
         paste_text_sticky: true,
-        setup: function (ed) {
-            ed.onInit.add(function (ed) {
+        setup: function (ed)
+        {
+            ed.onInit.add(function (ed)
+            {
                 ed.pasteAsPlainText = true;
             });
         },
@@ -240,7 +242,7 @@
         theme_advanced_buttons1: "bold,italic,underline, formatselect, link",
         theme_advanced_buttons2: "",
         cleanup: true,
-        theme_advanced_blockformats: "p,h2,h3",
+        theme_advanced_blockformats : "p,h2,h3",
         theme_advanced_toolbar_location: "top",
         theme_advanced_toolbar_align: "left",
         theme_advanced_statusbar_location: "bottom",

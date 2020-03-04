@@ -1,5 +1,11 @@
-2019-07-05 09:19:01.1883 Integration > Cursos: FAILED! > No es posible conectar con el servidor remoto
-2019-07-05 09:40:30.8197 Integration > Cursos: FAILED! > No es posible conectar con el servidor remoto
-2019-07-05 10:04:32.7675 Integration > Cursos: FAILED! > No es posible conectar con el servidor remoto
-2019-07-05 14:43:11.4370 Integration > Cursos: FAILED! > No es posible conectar con el servidor remoto
-2019-07-05 15:34:03.0766 Integration > Cursos: FAILED! > No es posible conectar con el servidor remoto
+2019-07-05 09:03:14.9885 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-07-05 10:08:00.6715 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-07-05 11:14:36.2127 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-07-05 11:26:38.3795 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-07-05 11:43:23.2290 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-07-05 11:51:08.7915 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-07-05 12:05:33.9870 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-07-05 12:07:49.7613 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-07-05 12:08:42.8027 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-07-05 12:09:49.6496 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-07-05 17:17:10.9723 Integration > Cursos: FAILED! > Unable to connect to the remote server
