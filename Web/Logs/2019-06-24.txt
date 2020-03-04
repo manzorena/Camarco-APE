@@ -1,0 +1,7 @@
+2019-06-24 09:09:37.7086 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-06-24 09:13:48.7881 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-06-24 10:29:00.7069 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-06-24 18:05:19.1580 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-06-24 18:06:10.2265 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-06-24 18:08:35.5744 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-06-24 18:10:23.2520 Integration > Cursos: FAILED! > Unable to connect to the remote server

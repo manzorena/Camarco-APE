@@ -1,0 +1,108 @@
+2013-06-24 09:16:04.2325 Integration > Cursos > LocalLoad: FAILED! > CampaignID e6f25971-ee66-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:16:04.2615 Integration > Cursos > LocalLoad: FAILED! > CampaignID 408c9737-5669-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:16:04.2835 Integration > Cursos > LocalLoad: FAILED! > CampaignID c5910f8c-5969-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:16:04.2985 Integration > Cursos > LocalLoad: FAILED! > CampaignID a76f09d9-5c69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:16:04.3145 Integration > Cursos > LocalLoad: FAILED! > CampaignID 62b9ea65-5d69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:16:04.3975 Integration > Cursos > LocalLoad: FAILED! > CampaignID 17712df7-6069-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:16:04.4135 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7a9f8152-6169-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:16:04.4335 Integration > Cursos > LocalLoad: FAILED! > CampaignID fbc4857b-6269-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:16:04.4515 Integration > Cursos > LocalLoad: FAILED! > CampaignID 4d4f7abe-6e69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:16:04.4705 Integration > Cursos > LocalLoad: FAILED! > CampaignID 1aa23f3e-6f69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:16:04.4915 Integration > Cursos > LocalLoad: FAILED! > CampaignID bfc604dd-166a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:16:04.5085 Integration > Cursos > LocalLoad: FAILED! > CampaignID 5bd85493-176a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:16:04.5315 Integration > Cursos > LocalLoad: FAILED! > CampaignID 0927c8e5-1f6a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:16:04.5525 Integration > Cursos > LocalLoad: FAILED! > CampaignID 79ae5ce5-df6a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:16:04.5715 Integration > Cursos > LocalLoad: FAILED! > CampaignID a6c5e1dd-e06a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:16:04.5905 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7105ba2e-e36a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:16:04.6065 Integration > Cursos > LocalLoad: FAILED! > CampaignID dc48fd27-e56a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:16:04.6265 Integration > Cursos > LocalLoad: FAILED! > CampaignID c78b9b39-766c-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:16:04.6505 Integration > Cursos > LocalLoad: FAILED! > CampaignID a26e61d0-886c-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:16:04.6585 Integration > Cursos > LocalLoad: FAILED! > CampaignID bc1d59be-9c6f-e211-9fab-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:16:04.6795 Integration > Cursos > LocalLoad: FAILED! > CampaignID 621fb323-d3d1-e211-a578-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:16:05.4535 Integration > Cursos > LocalSave: FAILED! > CampaignID d8b20510-fe66-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:16:05.4905 Integration > Cursos > LocalSave: FAILED! > CampaignID a135f614-5469-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:16:05.5235 Integration > Cursos > LocalSave: FAILED! > CampaignID 93bd844e-5769-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:16:05.5555 Integration > Cursos > LocalSave: FAILED! > CampaignID afcc03c8-5769-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:16:05.5805 Integration > Cursos > LocalSave: FAILED! > CampaignID 4a853e45-5e69-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:16:05.6115 Integration > Cursos > LocalSave: FAILED! > CampaignID 06ae2fbf-5e69-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:16:05.6425 Integration > Cursos > LocalSave: FAILED! > CampaignID ab358ebc-6169-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:16:05.6725 Integration > Cursos > LocalSave: FAILED! > CampaignID 6f47a2c3-6f69-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:16:05.7135 Integration > Cursos > LocalSave: FAILED! > CampaignID 1e19c019-186a-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:16:05.7545 Integration > Cursos > LocalSave: FAILED! > CampaignID eb4134e3-196a-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:16:05.7955 Integration > Cursos > LocalSave: FAILED! > CampaignID b97ac0f2-1a6a-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:16:05.8385 Integration > Cursos > LocalSave: FAILED! > CampaignID 2ee7f180-206a-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:16:05.8785 Integration > Cursos > LocalSave: FAILED! > CampaignID 2a310a04-7d6c-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:16:05.9205 Integration > Cursos > LocalSave: FAILED! > CampaignID 6ac49fd4-7f6c-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:16:05.9605 Integration > Cursos > LocalSave: FAILED! > CampaignID befeb3fc-866c-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:19:38.5842 Integration > Cursos > LocalLoad: FAILED! > CampaignID e6f25971-ee66-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:19:38.5998 Integration > Cursos > LocalLoad: FAILED! > CampaignID 408c9737-5669-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:19:38.5998 Integration > Cursos > LocalLoad: FAILED! > CampaignID c5910f8c-5969-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:19:38.5998 Integration > Cursos > LocalLoad: FAILED! > CampaignID a76f09d9-5c69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:19:38.5998 Integration > Cursos > LocalLoad: FAILED! > CampaignID 62b9ea65-5d69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:19:38.5998 Integration > Cursos > LocalLoad: FAILED! > CampaignID 17712df7-6069-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:19:38.5998 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7a9f8152-6169-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:19:38.6154 Integration > Cursos > LocalLoad: FAILED! > CampaignID fbc4857b-6269-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:19:38.6154 Integration > Cursos > LocalLoad: FAILED! > CampaignID 4d4f7abe-6e69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:19:38.6154 Integration > Cursos > LocalLoad: FAILED! > CampaignID 1aa23f3e-6f69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:19:38.6154 Integration > Cursos > LocalLoad: FAILED! > CampaignID bfc604dd-166a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:19:38.6154 Integration > Cursos > LocalLoad: FAILED! > CampaignID 5bd85493-176a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:19:38.6154 Integration > Cursos > LocalLoad: FAILED! > CampaignID 0927c8e5-1f6a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:19:38.6154 Integration > Cursos > LocalLoad: FAILED! > CampaignID 79ae5ce5-df6a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:19:38.6154 Integration > Cursos > LocalLoad: FAILED! > CampaignID a6c5e1dd-e06a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:19:38.6154 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7105ba2e-e36a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:19:38.6310 Integration > Cursos > LocalLoad: FAILED! > CampaignID dc48fd27-e56a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:19:38.6310 Integration > Cursos > LocalLoad: FAILED! > CampaignID c78b9b39-766c-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:19:38.6310 Integration > Cursos > LocalLoad: FAILED! > CampaignID a26e61d0-886c-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:19:38.6310 Integration > Cursos > LocalLoad: FAILED! > CampaignID bc1d59be-9c6f-e211-9fab-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:19:38.6310 Integration > Cursos > LocalLoad: FAILED! > CampaignID 621fb323-d3d1-e211-a578-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 09:19:38.6466 Integration > Cursos > LocalSave: FAILED! > CampaignID d8b20510-fe66-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:19:38.6466 Integration > Cursos > LocalSave: FAILED! > CampaignID a135f614-5469-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:19:38.6466 Integration > Cursos > LocalSave: FAILED! > CampaignID 93bd844e-5769-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:19:38.6622 Integration > Cursos > LocalSave: FAILED! > CampaignID afcc03c8-5769-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:19:38.6622 Integration > Cursos > LocalSave: FAILED! > CampaignID 4a853e45-5e69-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:19:38.6622 Integration > Cursos > LocalSave: FAILED! > CampaignID 06ae2fbf-5e69-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:19:38.6622 Integration > Cursos > LocalSave: FAILED! > CampaignID ab358ebc-6169-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:19:38.6622 Integration > Cursos > LocalSave: FAILED! > CampaignID 6f47a2c3-6f69-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:19:38.6778 Integration > Cursos > LocalSave: FAILED! > CampaignID 1e19c019-186a-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:19:38.6778 Integration > Cursos > LocalSave: FAILED! > CampaignID eb4134e3-196a-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:19:38.6778 Integration > Cursos > LocalSave: FAILED! > CampaignID b97ac0f2-1a6a-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:19:38.6778 Integration > Cursos > LocalSave: FAILED! > CampaignID 2ee7f180-206a-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:19:38.6778 Integration > Cursos > LocalSave: FAILED! > CampaignID 2a310a04-7d6c-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:19:38.6934 Integration > Cursos > LocalSave: FAILED! > CampaignID 6ac49fd4-7f6c-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 09:19:38.6934 Integration > Cursos > LocalSave: FAILED! > CampaignID befeb3fc-866c-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 12:29:29.5866 Integration > Cursos > LocalLoad: FAILED! > CampaignID e6f25971-ee66-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 12:29:29.6166 Integration > Cursos > LocalLoad: FAILED! > CampaignID 408c9737-5669-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 12:29:29.6366 Integration > Cursos > LocalLoad: FAILED! > CampaignID c5910f8c-5969-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 12:29:29.6766 Integration > Cursos > LocalLoad: FAILED! > CampaignID a76f09d9-5c69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 12:29:29.6966 Integration > Cursos > LocalLoad: FAILED! > CampaignID 62b9ea65-5d69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 12:29:29.7166 Integration > Cursos > LocalLoad: FAILED! > CampaignID 17712df7-6069-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 12:29:29.7466 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7a9f8152-6169-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 12:29:29.7866 Integration > Cursos > LocalLoad: FAILED! > CampaignID fbc4857b-6269-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 12:29:29.8066 Integration > Cursos > LocalLoad: FAILED! > CampaignID 4d4f7abe-6e69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 12:29:29.8166 Integration > Cursos > LocalLoad: FAILED! > CampaignID 1aa23f3e-6f69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 12:29:29.8366 Integration > Cursos > LocalLoad: FAILED! > CampaignID bfc604dd-166a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 12:29:29.8366 Integration > Cursos > LocalLoad: FAILED! > CampaignID 5bd85493-176a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 12:29:29.8766 Integration > Cursos > LocalLoad: FAILED! > CampaignID 0927c8e5-1f6a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 12:29:29.8866 Integration > Cursos > LocalLoad: FAILED! > CampaignID 79ae5ce5-df6a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 12:29:29.9366 Integration > Cursos > LocalLoad: FAILED! > CampaignID a6c5e1dd-e06a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 12:29:29.9466 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7105ba2e-e36a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 12:29:29.9666 Integration > Cursos > LocalLoad: FAILED! > CampaignID dc48fd27-e56a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 12:29:29.9766 Integration > Cursos > LocalLoad: FAILED! > CampaignID c78b9b39-766c-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 12:29:29.9966 Integration > Cursos > LocalLoad: FAILED! > CampaignID a26e61d0-886c-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 12:29:30.0166 Integration > Cursos > LocalLoad: FAILED! > CampaignID bc1d59be-9c6f-e211-9fab-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 12:29:30.0266 Integration > Cursos > LocalLoad: FAILED! > CampaignID 621fb323-d3d1-e211-a578-001e908e9d61 | Input string was not in a correct format.
+2013-06-24 12:29:30.1766 Integration > Cursos > LocalSave: FAILED! > CampaignID d8b20510-fe66-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 12:29:30.2266 Integration > Cursos > LocalSave: FAILED! > CampaignID a135f614-5469-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 12:29:30.2666 Integration > Cursos > LocalSave: FAILED! > CampaignID 93bd844e-5769-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 12:29:30.3066 Integration > Cursos > LocalSave: FAILED! > CampaignID afcc03c8-5769-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 12:29:30.3466 Integration > Cursos > LocalSave: FAILED! > CampaignID 4a853e45-5e69-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 12:29:30.3966 Integration > Cursos > LocalSave: FAILED! > CampaignID 06ae2fbf-5e69-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 12:29:30.4366 Integration > Cursos > LocalSave: FAILED! > CampaignID ab358ebc-6169-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 12:29:30.4766 Integration > Cursos > LocalSave: FAILED! > CampaignID 6f47a2c3-6f69-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 12:29:30.5166 Integration > Cursos > LocalSave: FAILED! > CampaignID 1e19c019-186a-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 12:29:30.5566 Integration > Cursos > LocalSave: FAILED! > CampaignID eb4134e3-196a-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 12:29:30.6066 Integration > Cursos > LocalSave: FAILED! > CampaignID b97ac0f2-1a6a-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 12:29:30.6466 Integration > Cursos > LocalSave: FAILED! > CampaignID 2ee7f180-206a-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 12:29:30.6866 Integration > Cursos > LocalSave: FAILED! > CampaignID 2a310a04-7d6c-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 12:29:30.7266 Integration > Cursos > LocalSave: FAILED! > CampaignID 6ac49fd4-7f6c-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.
+2013-06-24 12:29:30.7666 Integration > Cursos > LocalSave: FAILED! > CampaignID befeb3fc-866c-e211-9ce9-001e908e9d61 | Procedure or function 'Curso_Update' expects parameter '@retval', which was not supplied.

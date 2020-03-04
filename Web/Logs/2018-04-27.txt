@@ -1,0 +1,31 @@
+2018-04-27 11:11:19.9458 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2018-04-27 11:19:27.0761 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2018-04-27 11:37:14.9070 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2018-04-27 11:39:14.7228 System.Exception: File > Load : El ID de File no existe.
+   at Camarco.Model.File..ctor(Int32 pFileID) in C:\Users\prisma\Desktop\RECUPERACION CAMARCO\Camarco\Model\File.cs:line 57
+   at Camarco.Web.Controllers.FileController.GetFile(Int32 id) in C:\Users\prisma\Desktop\RECUPERACION CAMARCO\Camarco\Web\Descargas\Controllers\FileController.cs:line 118
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2018-04-27 11:43:29.7192 System.Exception: File > Load : El ID de File no existe.
+   at Camarco.Model.File..ctor(Int32 pFileID) in C:\Users\prisma\Desktop\RECUPERACION CAMARCO\Camarco\Model\File.cs:line 57
+   at Camarco.Web.Controllers.FileController.GetFile(Int32 id) in C:\Users\prisma\Desktop\RECUPERACION CAMARCO\Camarco\Web\Descargas\Controllers\FileController.cs:line 118
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2018-04-27 12:27:21.7718 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2018-04-27 12:27:24.6957 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2018-04-27 12:27:59.8465 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2018-04-27 12:31:55.2299 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
