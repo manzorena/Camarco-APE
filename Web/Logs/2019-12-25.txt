@@ -1,0 +1,27 @@
+2019-12-25 19:23:01.1593 Integration > Cursos: FAILED! > The remote name could not be resolved: 'webdesarrollo.camarco.org.ar'
+2019-12-25 19:36:29.1890 Integration > Cursos: FAILED! > The remote name could not be resolved: 'webdesarrollo.camarco.org.ar'
+2019-12-25 19:43:32.1695 System.Data.SqlClient.SqlException: A transport-level error has occurred when sending the request to the server. (provider: Shared Memory Provider, error: 0 - Se está cerrando la canalización.)
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParserStateObject.WriteSni()
+   at System.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode)
+   at System.Data.SqlClient.TdsParserStateObject.ExecuteFlush()
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Camarco.Tools.SQL.DBHelper.RunSPReturnInteger(String cSPName, Boolean usesTransaction, customParameter[] commandParameters) in C:\Users\manzorena\Desktop\Portafolio\Proyectos\CAMARCO\Camarco_3.5_Login\Camarco_Transparencia_3.5\Tools\SQL\DBHelper.cs:line 115
+   at Camarco.Model.ResourceManager.GetBySlugType(String slug, ResourceType rtype) in C:\Users\manzorena\Desktop\Portafolio\Proyectos\CAMARCO\Camarco_3.5_Login\Camarco_Transparencia_3.5\Model\ResourceManager.cs:line 152
+   at Camarco.Web.Controllers.TemplatesController.Dispatch(String slug_s, String slug_ss, String slug_r) in C:\Users\manzorena\Desktop\Portafolio\Proyectos\CAMARCO\Camarco_3.5_Login\Camarco_Transparencia_3.5\Web\Descargas\Controllers\TemplatesController.cs:line 1038
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-12-25 19:44:01.7978 Integration > Cursos: FAILED! > The remote name could not be resolved: 'webdesarrollo.camarco.org.ar'

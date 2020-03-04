@@ -1,0 +1,4 @@
+2020-01-29 14:41:07.8364 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2020-01-29 14:59:43.6039 Integration > Cursos: FAILED! > The remote name could not be resolved: 'webdesarrollo.camarco.org.ar'
+2020-01-29 17:09:07.7660 Integration > Cursos: FAILED! > The remote name could not be resolved: 'webdesarrollo.camarco.org.ar'
+2020-01-29 20:06:35.3410 Integration > Cursos: FAILED! > The remote name could not be resolved: 'webdesarrollo.camarco.org.ar'

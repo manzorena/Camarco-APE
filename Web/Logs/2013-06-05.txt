@@ -1,0 +1,252 @@
+2013-06-05 09:03:53.1668 Integration > Cursos > LocalLoad: FAILED! > CampaignID 408c9737-5669-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:03:53.1778 Integration > Cursos > LocalLoad: FAILED! > CampaignID c5910f8c-5969-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:03:53.1778 Integration > Cursos > LocalLoad: FAILED! > CampaignID a76f09d9-5c69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:03:53.1778 Integration > Cursos > LocalLoad: FAILED! > CampaignID 62b9ea65-5d69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:03:53.1778 Integration > Cursos > LocalLoad: FAILED! > CampaignID 17712df7-6069-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:03:53.1958 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7a9f8152-6169-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:03:53.1958 Integration > Cursos > LocalLoad: FAILED! > CampaignID fbc4857b-6269-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:03:53.1958 Integration > Cursos > LocalLoad: FAILED! > CampaignID 4d4f7abe-6e69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:03:53.2098 Integration > Cursos > LocalLoad: FAILED! > CampaignID 1aa23f3e-6f69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:03:53.2098 Integration > Cursos > LocalLoad: FAILED! > CampaignID bfc604dd-166a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:03:53.2098 Integration > Cursos > LocalLoad: FAILED! > CampaignID 0927c8e5-1f6a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:03:53.2248 Integration > Cursos > LocalLoad: FAILED! > CampaignID 79ae5ce5-df6a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:03:53.2248 Integration > Cursos > LocalLoad: FAILED! > CampaignID a6c5e1dd-e06a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:03:53.2248 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7105ba2e-e36a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:03:53.2408 Integration > Cursos > LocalLoad: FAILED! > CampaignID dc48fd27-e56a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:03:53.2408 Integration > Cursos > LocalLoad: FAILED! > CampaignID a26e61d0-886c-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:03:53.2408 Integration > Cursos > LocalLoad: FAILED! > CampaignID bc1d59be-9c6f-e211-9fab-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:03:53.3308 Integration > Cursos > LocalSave: FAILED! > CampaignID c78b9b39-766c-e211-9ce9-001e908e9d61 | SqlDbType.SmallDateTime overflow.  Value '10/31/2103 10:00:00' is out of range.  Must be between 1/1/1900 12:00:00 AM and 6/6/2079 11:59:59 PM.
+2013-06-05 09:21:00.5536 Integration > Cursos > LocalLoad: FAILED! > CampaignID 408c9737-5669-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:00.5636 Integration > Cursos > LocalLoad: FAILED! > CampaignID c5910f8c-5969-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:00.5636 Integration > Cursos > LocalLoad: FAILED! > CampaignID a76f09d9-5c69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:00.5636 Integration > Cursos > LocalLoad: FAILED! > CampaignID 62b9ea65-5d69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:00.5636 Integration > Cursos > LocalLoad: FAILED! > CampaignID 17712df7-6069-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:00.5636 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7a9f8152-6169-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:00.5636 Integration > Cursos > LocalLoad: FAILED! > CampaignID fbc4857b-6269-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:00.5636 Integration > Cursos > LocalLoad: FAILED! > CampaignID 4d4f7abe-6e69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:00.5636 Integration > Cursos > LocalLoad: FAILED! > CampaignID 1aa23f3e-6f69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:00.5636 Integration > Cursos > LocalLoad: FAILED! > CampaignID bfc604dd-166a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:00.5636 Integration > Cursos > LocalLoad: FAILED! > CampaignID 0927c8e5-1f6a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:00.5636 Integration > Cursos > LocalLoad: FAILED! > CampaignID 79ae5ce5-df6a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:00.5636 Integration > Cursos > LocalLoad: FAILED! > CampaignID a6c5e1dd-e06a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:00.5636 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7105ba2e-e36a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:00.5636 Integration > Cursos > LocalLoad: FAILED! > CampaignID dc48fd27-e56a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:00.5636 Integration > Cursos > LocalLoad: FAILED! > CampaignID a26e61d0-886c-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:00.5636 Integration > Cursos > LocalLoad: FAILED! > CampaignID bc1d59be-9c6f-e211-9fab-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:00.6436 Integration > Cursos > LocalSave: FAILED! > CampaignID c78b9b39-766c-e211-9ce9-001e908e9d61 | SqlDbType.SmallDateTime overflow.  Value '10/31/2103 10:00:00' is out of range.  Must be between 1/1/1900 12:00:00 AM and 6/6/2079 11:59:59 PM.
+2013-06-05 09:21:54.6047 Integration > Cursos > LocalLoad: FAILED! > CampaignID 408c9737-5669-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:54.6047 Integration > Cursos > LocalLoad: FAILED! > CampaignID c5910f8c-5969-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:54.6047 Integration > Cursos > LocalLoad: FAILED! > CampaignID a76f09d9-5c69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:54.6047 Integration > Cursos > LocalLoad: FAILED! > CampaignID 62b9ea65-5d69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:54.6047 Integration > Cursos > LocalLoad: FAILED! > CampaignID 17712df7-6069-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:54.6047 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7a9f8152-6169-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:54.6047 Integration > Cursos > LocalLoad: FAILED! > CampaignID fbc4857b-6269-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:54.6047 Integration > Cursos > LocalLoad: FAILED! > CampaignID 4d4f7abe-6e69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:54.6047 Integration > Cursos > LocalLoad: FAILED! > CampaignID 1aa23f3e-6f69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:54.6047 Integration > Cursos > LocalLoad: FAILED! > CampaignID bfc604dd-166a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:54.6047 Integration > Cursos > LocalLoad: FAILED! > CampaignID 0927c8e5-1f6a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:54.6047 Integration > Cursos > LocalLoad: FAILED! > CampaignID 79ae5ce5-df6a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:54.6047 Integration > Cursos > LocalLoad: FAILED! > CampaignID a6c5e1dd-e06a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:54.6047 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7105ba2e-e36a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:54.6047 Integration > Cursos > LocalLoad: FAILED! > CampaignID dc48fd27-e56a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:54.6047 Integration > Cursos > LocalLoad: FAILED! > CampaignID a26e61d0-886c-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:54.6047 Integration > Cursos > LocalLoad: FAILED! > CampaignID bc1d59be-9c6f-e211-9fab-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:21:54.6947 Integration > Cursos > LocalSave: FAILED! > CampaignID c78b9b39-766c-e211-9ce9-001e908e9d61 | SqlDbType.SmallDateTime overflow.  Value '10/31/2103 10:00:00' is out of range.  Must be between 1/1/1900 12:00:00 AM and 6/6/2079 11:59:59 PM.
+2013-06-05 09:56:48.8923 Integration > Cursos > LocalLoad: FAILED! > CampaignID 408c9737-5669-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:56:48.9023 Integration > Cursos > LocalLoad: FAILED! > CampaignID c5910f8c-5969-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:56:48.9023 Integration > Cursos > LocalLoad: FAILED! > CampaignID a76f09d9-5c69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:56:48.9023 Integration > Cursos > LocalLoad: FAILED! > CampaignID 62b9ea65-5d69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:56:48.9223 Integration > Cursos > LocalLoad: FAILED! > CampaignID 17712df7-6069-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:56:48.9223 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7a9f8152-6169-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:56:48.9223 Integration > Cursos > LocalLoad: FAILED! > CampaignID fbc4857b-6269-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:56:48.9423 Integration > Cursos > LocalLoad: FAILED! > CampaignID 4d4f7abe-6e69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:56:48.9423 Integration > Cursos > LocalLoad: FAILED! > CampaignID 1aa23f3e-6f69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:56:48.9523 Integration > Cursos > LocalLoad: FAILED! > CampaignID bfc604dd-166a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:56:48.9523 Integration > Cursos > LocalLoad: FAILED! > CampaignID 0927c8e5-1f6a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:56:48.9523 Integration > Cursos > LocalLoad: FAILED! > CampaignID 79ae5ce5-df6a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:56:48.9723 Integration > Cursos > LocalLoad: FAILED! > CampaignID a6c5e1dd-e06a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:56:48.9723 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7105ba2e-e36a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:56:48.9823 Integration > Cursos > LocalLoad: FAILED! > CampaignID dc48fd27-e56a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:56:48.9823 Integration > Cursos > LocalLoad: FAILED! > CampaignID a26e61d0-886c-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:56:48.9823 Integration > Cursos > LocalLoad: FAILED! > CampaignID bc1d59be-9c6f-e211-9fab-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-06-05 09:56:49.2323 Integration > Cursos > LocalSave: FAILED! > CampaignID c78b9b39-766c-e211-9ce9-001e908e9d61 | SqlDbType.SmallDateTime overflow.  Value '10/31/2103 10:00:00' is out of range.  Must be between 1/1/1900 12:00:00 AM and 6/6/2079 11:59:59 PM.
+2013-06-05 10:34:02.0428 Integration > Cursos: FAILED! > The remote name could not be resolved: 'webdesarrollo.camarco.org.ar'
+2013-06-05 15:43:08.1773 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2013-06-05 15:48:32.0915 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2013-06-05 15:51:27.6209 System.ArgumentException: Can not convert String to Int32.
+   at Newtonsoft.Json.Linq.JToken.op_Explicit(JToken value) in c:\Dev\Releases\Working\Newtonsoft.Json\Src\Newtonsoft.Json\Linq\JToken.cs:line 557
+   at Camarco.Web.Controllers.TemplatesController.Contacto(String data) in D:\My Documents\Websites\Camarco\Web\Controllers\TemplatesController.cs:line 16
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2013-06-05 15:51:58.1779 System.ArgumentNullException: Value cannot be null.
+Parameter name: value
+   at Newtonsoft.Json.Linq.JToken.EnsureValue(JToken value) in c:\Dev\Releases\Working\Newtonsoft.Json\Src\Newtonsoft.Json\Linq\JToken.cs:line 361
+   at Newtonsoft.Json.Linq.JToken.op_Explicit(JToken value) in c:\Dev\Releases\Working\Newtonsoft.Json\Src\Newtonsoft.Json\Linq\JToken.cs:line 555
+   at Camarco.Web.Controllers.TemplatesController.Contacto(String data) in D:\My Documents\Websites\Camarco\Web\Controllers\TemplatesController.cs:line 16
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2013-06-05 15:53:32.5535 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2013-06-05 16:11:05.2942 System.Web.HttpException: Error executing child request for handler 'System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerWrapper'. ---> System.Web.HttpUnhandledException: Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at ASP.views_shared_showcase_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in d:\My Documents\Websites\Camarco\Web\Views\Shared\Showcase.ascx:line 14
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Page.Render(HtmlTextWriter writer)
+   at System.Web.Mvc.ViewPage.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at System.Web.Mvc.ViewPage.ProcessRequest(HttpContext context)
+   at System.Web.Mvc.ViewUserControl.ViewUserControlContainerPage.ProcessRequest(HttpContext context)
+   at System.Web.Mvc.ViewPage.RenderView(ViewContext viewContext)
+   at System.Web.Mvc.ViewUserControl.RenderViewAndRestoreContentType(ViewPage containerPage, ViewContext viewContext)
+   at System.Web.Mvc.ViewUserControl.RenderView(ViewContext viewContext)
+   at System.Web.Mvc.WebFormView.RenderViewUserControl(ViewContext context, ViewUserControl control)
+   at System.Web.Mvc.WebFormView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   at System.Web.Mvc.Html.RenderPartialExtensions.RenderPartial(HtmlHelper htmlHelper, String partialViewName, Object model)
+   at ASP.views_templates_home_aspx.__RenderContent2(HtmlTextWriter __w, Control parameterContainer) in d:\My Documents\Websites\Camarco\Web\Views\Templates\Home.aspx:line 12
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.views_shared_site_master.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in d:\My Documents\Websites\Camarco\Web\Views\Shared\Site.Master:line 59
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Page.Render(HtmlTextWriter writer)
+   at System.Web.Mvc.ViewPage.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at System.Web.Mvc.ViewPage.ProcessRequest(HttpContext context)
+   at ASP.views_templates_home_aspx.ProcessRequest(HttpContext context) in c:\Users\Matias Q\AppData\Local\Temp\Temporary ASP.NET Files\root\eaee465c\60a1192f\App_Web_ee8spmx1.0.cs:line 0
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass1.<ProcessRequest>b__0()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass4.<Wrap>b__3()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap[TResult](Func`1 func)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap(Action action)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.ProcessRequest(HttpContext context)
+   at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   --- End of inner exception stack trace ---
+   at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   at System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage)
+   at System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   at System.Web.HttpServerUtilityWrapper.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   at System.Web.Mvc.ViewPage.RenderView(ViewContext viewContext)
+   at System.Web.Mvc.WebFormView.RenderViewPage(ViewContext context, ViewPage page)
+   at System.Web.Mvc.WebFormView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass14.<InvokeActionResultWithFilters>b__11()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass14.<>c__DisplayClass16.<InvokeActionResultWithFilters>b__13()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2013-06-05 16:11:59.2325 System.Web.HttpException: Error executing child request for handler 'System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerWrapper'. ---> System.Web.HttpUnhandledException: Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASP.areas_adm_views_seccion_seccion_aspx.__RenderContent2(HtmlTextWriter __w, Control parameterContainer) in d:\My Documents\Websites\Camarco\Web\Areas\Adm\Views\Seccion\Seccion.aspx:line 524
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlHead.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.views_shared_back_master.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\Matias Q\AppData\Local\Temp\Temporary ASP.NET Files\root\eaee465c\60a1192f\App_Web_3ufgogmk.15.cs:line 0
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Page.Render(HtmlTextWriter writer)
+   at System.Web.Mvc.ViewPage.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at System.Web.Mvc.ViewPage.ProcessRequest(HttpContext context)
+   at ASP.areas_adm_views_seccion_seccion_aspx.ProcessRequest(HttpContext context) in c:\Users\Matias Q\AppData\Local\Temp\Temporary ASP.NET Files\root\eaee465c\60a1192f\App_Web_m75-b55o.4.cs:line 0
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass1.<ProcessRequest>b__0()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass4.<Wrap>b__3()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap[TResult](Func`1 func)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap(Action action)
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.ProcessRequest(HttpContext context)
+   at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   --- End of inner exception stack trace ---
+   at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   at System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage)
+   at System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   at System.Web.HttpServerUtilityWrapper.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   at System.Web.Mvc.ViewPage.RenderView(ViewContext viewContext)
+   at System.Web.Mvc.WebFormView.RenderViewPage(ViewContext context, ViewPage page)
+   at System.Web.Mvc.WebFormView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass14.<InvokeActionResultWithFilters>b__11()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass14.<>c__DisplayClass16.<InvokeActionResultWithFilters>b__13()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2013-06-05 16:16:35.7707 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2013-06-05 16:17:47.3913 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2013-06-05 16:27:14.0886 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2013-06-05 16:54:18.5209 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2013-06-05 17:01:14.8213 Integration > Cursos: FAILED! > Unable to connect to the remote server

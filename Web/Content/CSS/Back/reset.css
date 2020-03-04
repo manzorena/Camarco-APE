@@ -1,0 +1,55 @@
+@charset "iso-8859-1";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+}
+/* recordar definir estilos de focus! */
+:focus {
+	outline: 0;
+}
+body {
+	font-size: 62.5%;
+	line-height: 1.6em;
+	color: black;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+ol, ul {
+	list-style: none;
+}
+/* definir 'cellspacing="0"' para las tablas*/
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+a, a:hover, a:active { color:inherit; text-decoration:none;}
+
+/* *+html .floatFix, *+html ul, *+html .subcontenedor {height:1%} */
+*+html .floatFix, *+html ul, *+html .subcontenedor {display:inline-block;}
+*+html .floatFix, *+html ul, *+html .subcontenedor {display:block;}
+* html .floatFix, * html ul, * html .subcontenedor {height:1%}
+.floatFix:after, ul:after, .subcontenedor:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;}

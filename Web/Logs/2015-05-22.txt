@@ -1,0 +1,39 @@
+2015-05-22 11:13:41.3179 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-05-22 11:22:52.5141 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-05-22 11:28:18.2762 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-05-22 11:29:25.6375 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-05-22 11:32:50.3161 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Update(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.PagoRespuesta(String codResp) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 1542
+   at Camarco.Web.Controllers.TemplatesController.RespuestaPayU() in C:\Users\prisma\Desktop\Camarco\Web\Descargas\Controllers\TemplatesController.cs:line 1429
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-05-22 11:33:23.4650 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-05-22 11:34:10.3877 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Update(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.PagoRespuesta(String codResp) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 1542
+   at Camarco.Web.Controllers.TemplatesController.RespuestaPayU() in C:\Users\prisma\Desktop\Camarco\Web\Descargas\Controllers\TemplatesController.cs:line 1429
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-05-22 11:35:02.2960 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-05-22 11:40:16.3017 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-05-22 11:42:34.1553 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-05-22 13:47:36.7963 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.

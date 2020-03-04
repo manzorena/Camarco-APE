@@ -1,0 +1,4 @@
+2015-07-06 09:17:35.2104 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2015-07-06 09:18:44.4789 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2015-07-06 13:59:51.8981 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-07-06 14:00:59.2230 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.

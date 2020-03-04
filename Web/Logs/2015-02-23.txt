@@ -1,0 +1,41 @@
+2015-02-23 09:40:16.0693 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-02-23 10:01:26.4737 System.NullReferenceException: Object reference not set to an instance of an object.
+   at Camarco.Web.Controllers.TemplatesController.Facturacion() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 439
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-02-23 10:04:38.0119 System.NullReferenceException: Object reference not set to an instance of an object.
+   at Camarco.Web.Controllers.TemplatesController.Facturacion() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 439
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-02-23 10:07:43.7202 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-02-23 10:24:49.9428 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-02-23 10:38:56.8859 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-02-23 10:51:37.3223 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-02-23 11:38:20.9827 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-02-23 11:51:25.4447 System.NullReferenceException: Object reference not set to an instance of an object.
+   at Camarco.Web.Controllers.TemplatesController.Confirmacion() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 908
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-02-23 11:54:33.8835 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-02-23 12:41:36.8964 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
