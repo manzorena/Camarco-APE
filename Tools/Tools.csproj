@@ -33,11 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="microsoft.crm.sdk">
+    <Reference Include="microsoft.crm.sdk, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\microsoft.crm.sdk.dll</HintPath>
-      <Private>True</Private>
     </Reference>
-    <Reference Include="microsoft.crm.sdktypeproxy">
+    <Reference Include="microsoft.crm.sdktypeproxy, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\microsoft.crm.sdktypeproxy.dll</HintPath>
     </Reference>
     <Reference Include="System" />

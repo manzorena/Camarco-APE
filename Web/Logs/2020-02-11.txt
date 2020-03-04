@@ -1,0 +1,4 @@
+2020-02-11 20:12:54.6632 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2020-02-11 21:23:12.4459 Integration > Cursos: FAILED! > The request failed with HTTP status 502: Fiddler - Connection Failed.
+2020-02-11 21:24:36.0704 Integration > Cursos: FAILED! > The request failed with HTTP status 502: Fiddler - Connection Failed.
+2020-02-11 21:36:39.3971 Integration > Cursos: FAILED! > The request failed with HTTP status 502: Fiddler - Connection Failed.

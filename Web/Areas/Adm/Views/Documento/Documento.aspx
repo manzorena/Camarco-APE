@@ -245,6 +245,7 @@ var ViewModel = function(){
         }
         self.token = GlobalToken;
         self.descripcion = tinyMCE.get("txtDescripcion").getContent().replace(/[\n\r]/g, '');
+        alert(self.descripcion);
 		$('#btnSubmit').toggleClass('btn-waiting'); 
 		PageCore.AjaxPost('<%=Url.Action("Save","Documento")%>',ko.toJSON(self), function(obj){
 			$('#btnSubmit').toggleClass('btn-waiting'); 

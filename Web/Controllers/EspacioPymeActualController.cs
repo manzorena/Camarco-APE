@@ -185,7 +185,7 @@ namespace Camarco.Web.Controllers
 
         public static void Log(string logMessage)
         {
-            using (StreamWriter sw = new StreamWriter("C:\\LogsWeb\\LogEspacioPyme - " + DateTime.Now.ToString("dd-MM-yyyy") + ".txt", true))
+            using (StreamWriter sw = new StreamWriter("F:\\LogsWeb\\LogEspacioPyme - " + DateTime.Now.ToString("dd-MM-yyyy") + ".txt", true))
             {
                 sw.Write("\r\nLog Entry : ");
                 sw.WriteLine("{0} {1}", DateTime.Now.ToLongTimeString(), DateTime.Now.ToLongDateString());

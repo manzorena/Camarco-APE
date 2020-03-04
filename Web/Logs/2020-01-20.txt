@@ -1,1 +1,0 @@
-2020-01-20 09:48:12.6447 Integration > Cursos: FAILED! > Unable to connect to the remote server
