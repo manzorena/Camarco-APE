@@ -1,1 +1,0 @@
-2013-05-21 22:31:39.0362 Integration > Cursos: FAILED! > The request failed with HTTP status 408: ( Se superó el tiempo de espera para la operación. El servidor remoto no respondió dentro del tiempo establecido. Es posible que el servidor no se encuentre disponible en este momento. Vuelva a intentarlo más tarde o póngase en contacto con el administrador del servidor.  ).

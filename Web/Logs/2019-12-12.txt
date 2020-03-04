@@ -1,1 +1,0 @@
-2019-12-12 16:08:18.8833 Integration > Cursos: FAILED! > Unable to connect to the remote server

@@ -1,6 +1,0 @@
-2013-08-23 09:52:50.7093 Integration > Cursos > LocalSave: FAILED! > APLICACION DEL NUEVO REGLAMENTO ARGENTINO DE ESTRUCTURAS DE HORMIGON CIRSOC 201/05 CampaignID 28d12be9-aa09-e311-a189-00155d328303 | String or binary data would be truncated.
-The statement has been terminated.
-2013-08-23 09:52:51.0948 Integration > Cursos > LocalSave: FAILED! > ENCUENTROS EMPRESARIOS PYMES - III CampaignID c78b9b39-766c-e211-9ce9-001e908e9d61 | SqlDbType.SmallDateTime overflow.  Value '10/31/2103 10:00:00' is out of range.  Must be between 1/1/1900 12:00:00 AM and 6/6/2079 11:59:59 PM.
-2013-08-23 10:13:29.6314 Integration > Cursos > LocalSave: FAILED! > APLICACION DEL NUEVO REGLAMENTO ARGENTINO DE ESTRUCTURAS DE HORMIGON CIRSOC 201/05 CampaignID 28d12be9-aa09-e311-a189-00155d328303 | String or binary data would be truncated.
-The statement has been terminated.
-2013-08-23 10:13:29.8205 Integration > Cursos > LocalSave: FAILED! > ENCUENTROS EMPRESARIOS PYMES - III CampaignID c78b9b39-766c-e211-9ce9-001e908e9d61 | SqlDbType.SmallDateTime overflow.  Value '10/31/2103 10:00:00' is out of range.  Must be between 1/1/1900 12:00:00 AM and 6/6/2079 11:59:59 PM.

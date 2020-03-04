@@ -1,1 +1,0 @@
-2015-12-01 09:40:09.5576 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.

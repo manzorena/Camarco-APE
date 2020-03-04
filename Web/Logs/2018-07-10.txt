@@ -1,2 +1,0 @@
-2018-07-10 11:45:45.0135 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
-2018-07-10 11:45:52.1181 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.

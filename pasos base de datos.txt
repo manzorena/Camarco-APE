@@ -1,5 +1,0 @@
-agregar registro en tabla resource
-
-y agregar registro en la tabla secciones linkeando el resource id del registro anterior
-
-aaaa
