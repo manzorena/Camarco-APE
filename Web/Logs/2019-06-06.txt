@@ -1,1 +1,0 @@
-2019-06-06 14:53:15.7848 Integration > Cursos: FAILED! > No es posible conectar con el servidor remoto
