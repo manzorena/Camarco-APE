@@ -1,0 +1,87 @@
+2013-06-28 14:58:22.4008 System.Data.SqlClient.SqlException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Camarco.Tools.SQL.DBHelper.RunSPReturnDataSet(String cSPName, Boolean usesTransaction, customParameter[] commandParameters) in D:\My Documents\Websites\Camarco\Tools\SQL\DBHelper.cs:line 45
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Camarco.Tools.SQL.DBHelper.RunSPWithTransaction(String cSPName, customParameter[] commandParameters) in D:\My Documents\Websites\Camarco\Tools\SQL\DBHelper.cs:line 360
+   at Camarco.Tools.SQL.DBHelper.RunSP(String cSPName, Boolean usesTransaction, customParameter[] commandParameters) in D:\My Documents\Websites\Camarco\Tools\SQL\DBHelper.cs:line 324
+   at Camarco.Model.Cursos.ClearCursos() in D:\My Documents\Websites\Camarco\Model\Curso.cs:line 66
+   at Camarco.Integration.Sync.Cursos() in D:\My Documents\Websites\Camarco\Web\App_Code\Sync.cs:line 17
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+   at Camarco.Model.Secciones.ListByTemplate(Byte TemplateID) in D:\My Documents\Websites\Camarco\Model\Seccion.cs:line 29
+   at Camarco.Web.Controllers.TemplatesController.Dispatch(String slug_s, String slug_ss, String slug_r) in D:\My Documents\Websites\Camarco\Web\Controllers\TemplatesController.cs:line 157
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2013-06-28 15:01:41.1159 Integration > Cursos > LocalLoad: FAILED! > CampaignID 408c9737-5669-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:01:41.1259 Integration > Cursos > LocalLoad: FAILED! > CampaignID c5910f8c-5969-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:01:41.1259 Integration > Cursos > LocalLoad: FAILED! > CampaignID a76f09d9-5c69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:01:41.1259 Integration > Cursos > LocalLoad: FAILED! > CampaignID 62b9ea65-5d69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:01:41.1259 Integration > Cursos > LocalLoad: FAILED! > CampaignID 17712df7-6069-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:01:41.1259 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7a9f8152-6169-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:01:41.1259 Integration > Cursos > LocalLoad: FAILED! > CampaignID fbc4857b-6269-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:01:41.1259 Integration > Cursos > LocalLoad: FAILED! > CampaignID 4d4f7abe-6e69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:01:41.1259 Integration > Cursos > LocalLoad: FAILED! > CampaignID 1aa23f3e-6f69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:01:41.1399 Integration > Cursos > LocalLoad: FAILED! > CampaignID bfc604dd-166a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:01:41.1399 Integration > Cursos > LocalLoad: FAILED! > CampaignID 0927c8e5-1f6a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:01:41.1399 Integration > Cursos > LocalLoad: FAILED! > CampaignID 79ae5ce5-df6a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:01:41.1399 Integration > Cursos > LocalLoad: FAILED! > CampaignID a6c5e1dd-e06a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:01:41.1399 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7105ba2e-e36a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:01:41.1399 Integration > Cursos > LocalLoad: FAILED! > CampaignID dc48fd27-e56a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:01:41.1399 Integration > Cursos > LocalLoad: FAILED! > CampaignID c78b9b39-766c-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:01:41.1579 Integration > Cursos > LocalLoad: FAILED! > CampaignID bc1d59be-9c6f-e211-9fab-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:01:41.1579 Integration > Cursos > LocalLoad: FAILED! > CampaignID 621fb323-d3d1-e211-a578-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:06:02.8246 Integration > Cursos > LocalLoad: FAILED! > CampaignID 408c9737-5669-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:06:02.8346 Integration > Cursos > LocalLoad: FAILED! > CampaignID c5910f8c-5969-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:06:02.8346 Integration > Cursos > LocalLoad: FAILED! > CampaignID a76f09d9-5c69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:06:02.8346 Integration > Cursos > LocalLoad: FAILED! > CampaignID 62b9ea65-5d69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:06:02.8346 Integration > Cursos > LocalLoad: FAILED! > CampaignID 17712df7-6069-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:06:02.8346 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7a9f8152-6169-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:06:02.8346 Integration > Cursos > LocalLoad: FAILED! > CampaignID fbc4857b-6269-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:06:02.8346 Integration > Cursos > LocalLoad: FAILED! > CampaignID 4d4f7abe-6e69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:06:02.8346 Integration > Cursos > LocalLoad: FAILED! > CampaignID 1aa23f3e-6f69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:06:02.8346 Integration > Cursos > LocalLoad: FAILED! > CampaignID bfc604dd-166a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:06:02.8546 Integration > Cursos > LocalLoad: FAILED! > CampaignID 0927c8e5-1f6a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:06:02.8546 Integration > Cursos > LocalLoad: FAILED! > CampaignID 79ae5ce5-df6a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:06:02.8546 Integration > Cursos > LocalLoad: FAILED! > CampaignID a6c5e1dd-e06a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:06:02.8546 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7105ba2e-e36a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:06:02.8546 Integration > Cursos > LocalLoad: FAILED! > CampaignID dc48fd27-e56a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:06:02.8546 Integration > Cursos > LocalLoad: FAILED! > CampaignID c78b9b39-766c-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:06:02.8546 Integration > Cursos > LocalLoad: FAILED! > CampaignID bc1d59be-9c6f-e211-9fab-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:06:02.8546 Integration > Cursos > LocalLoad: FAILED! > CampaignID 621fb323-d3d1-e211-a578-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:07:31.4506 Integration > Cursos > LocalLoad: FAILED! > CampaignID 408c9737-5669-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:07:37.4701 Integration > Cursos > LocalLoad: FAILED! > CampaignID c5910f8c-5969-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:07:37.4711 Integration > Cursos > LocalLoad: FAILED! > CampaignID a76f09d9-5c69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:07:37.4711 Integration > Cursos > LocalLoad: FAILED! > CampaignID 62b9ea65-5d69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:07:37.4711 Integration > Cursos > LocalLoad: FAILED! > CampaignID 17712df7-6069-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:07:37.4711 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7a9f8152-6169-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:07:37.4711 Integration > Cursos > LocalLoad: FAILED! > CampaignID fbc4857b-6269-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:07:37.4711 Integration > Cursos > LocalLoad: FAILED! > CampaignID 4d4f7abe-6e69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:07:37.4711 Integration > Cursos > LocalLoad: FAILED! > CampaignID 1aa23f3e-6f69-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:07:37.4711 Integration > Cursos > LocalLoad: FAILED! > CampaignID bfc604dd-166a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:07:37.4931 Integration > Cursos > LocalLoad: FAILED! > CampaignID 0927c8e5-1f6a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:07:37.4931 Integration > Cursos > LocalLoad: FAILED! > CampaignID 79ae5ce5-df6a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:07:37.4931 Integration > Cursos > LocalLoad: FAILED! > CampaignID a6c5e1dd-e06a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:07:37.4931 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7105ba2e-e36a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:07:37.4931 Integration > Cursos > LocalLoad: FAILED! > CampaignID dc48fd27-e56a-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:07:37.4931 Integration > Cursos > LocalLoad: FAILED! > CampaignID c78b9b39-766c-e211-9ce9-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:07:37.5071 Integration > Cursos > LocalLoad: FAILED! > CampaignID bc1d59be-9c6f-e211-9fab-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:07:37.5071 Integration > Cursos > LocalLoad: FAILED! > CampaignID 621fb323-d3d1-e211-a578-001e908e9d61 | Input string was not in a correct format.
+2013-06-28 15:09:30.7394 Integration > Cursos > LocalSave: FAILED! > CampaignID c78b9b39-766c-e211-9ce9-001e908e9d61 | SqlDbType.SmallDateTime overflow.  Value '10/31/2103 10:00:00' is out of range.  Must be between 1/1/1900 12:00:00 AM and 6/6/2079 11:59:59 PM.

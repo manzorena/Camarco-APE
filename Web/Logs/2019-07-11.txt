@@ -1,0 +1,12 @@
+2019-07-11 09:10:10.8952 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-07-11 09:58:22.5908 Integration > Cursos: FAILED! > The operation has timed out
+2019-07-11 10:09:03.6368 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-07-11 10:57:41.6664 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-07-11 11:08:30.9585 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-07-11 11:28:52.9259 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-07-11 11:38:44.4467 Integration > Cursos: FAILED! > The operation has timed out
+2019-07-11 11:47:36.6133 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-07-11 12:24:45.4476 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-07-11 14:00:32.9073 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-07-11 14:21:43.3808 Integration > Cursos: FAILED! > Unable to connect to the remote server
+2019-07-11 14:38:04.5685 Integration > Cursos: FAILED! > Unable to connect to the remote server

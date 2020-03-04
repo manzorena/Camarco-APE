@@ -1,0 +1,48 @@
+2013-05-07 09:53:37.8827 Integration > Cursos > LocalLoad: FAILED! > CampaignID c5910f8c-5969-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:53:37.8827 Integration > Cursos > LocalLoad: FAILED! > CampaignID a76f09d9-5c69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:53:37.9007 Integration > Cursos > LocalLoad: FAILED! > CampaignID 62b9ea65-5d69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:53:37.9007 Integration > Cursos > LocalLoad: FAILED! > CampaignID 17712df7-6069-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:53:37.9007 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7a9f8152-6169-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:53:37.9147 Integration > Cursos > LocalLoad: FAILED! > CampaignID fbc4857b-6269-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:53:37.9147 Integration > Cursos > LocalLoad: FAILED! > CampaignID 4d4f7abe-6e69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:53:37.9147 Integration > Cursos > LocalLoad: FAILED! > CampaignID 1aa23f3e-6f69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:53:37.9287 Integration > Cursos > LocalLoad: FAILED! > CampaignID bfc604dd-166a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:53:37.9287 Integration > Cursos > LocalLoad: FAILED! > CampaignID 0927c8e5-1f6a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:53:37.9287 Integration > Cursos > LocalLoad: FAILED! > CampaignID 79ae5ce5-df6a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:53:37.9437 Integration > Cursos > LocalLoad: FAILED! > CampaignID a6c5e1dd-e06a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:53:37.9437 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7105ba2e-e36a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:53:37.9437 Integration > Cursos > LocalLoad: FAILED! > CampaignID dc48fd27-e56a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:53:37.9597 Integration > Cursos > LocalLoad: FAILED! > CampaignID a26e61d0-886c-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:53:37.9597 Integration > Cursos > LocalLoad: FAILED! > CampaignID bc1d59be-9c6f-e211-9fab-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:53:38.9548 Integration > Cursos > LocalSave: FAILED! > CampaignID c78b9b39-766c-e211-9ce9-001e908e9d61 | SqlDbType.SmallDateTime overflow.  Value '10/31/2103 10:00:00' is out of range.  Must be between 1/1/1900 12:00:00 AM and 6/6/2079 11:59:59 PM.
+2013-05-07 09:56:14.4328 System.Web.HttpException: The directive or the configuration settings profile must specify the 'varyByParam' attribute.
+   at System.Web.UI.Page.InitOutputCache(OutputCacheParameters cacheSettings)
+   at System.Web.Mvc.OutputCacheAttribute.OutputCachedPage.FrameworkInitialize()
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at System.Web.Mvc.OutputCacheAttribute.OnResultExecuting(ResultExecutingContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass14.<>c__DisplayClass16.<InvokeActionResultWithFilters>b__13()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass14.<>c__DisplayClass16.<InvokeActionResultWithFilters>b__13()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2013-05-07 09:59:47.7531 Integration > Cursos > LocalLoad: FAILED! > CampaignID c5910f8c-5969-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:59:47.7631 Integration > Cursos > LocalLoad: FAILED! > CampaignID a76f09d9-5c69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:59:47.7731 Integration > Cursos > LocalLoad: FAILED! > CampaignID 62b9ea65-5d69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:59:47.7731 Integration > Cursos > LocalLoad: FAILED! > CampaignID 17712df7-6069-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:59:47.7931 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7a9f8152-6169-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:59:47.7931 Integration > Cursos > LocalLoad: FAILED! > CampaignID fbc4857b-6269-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:59:47.8031 Integration > Cursos > LocalLoad: FAILED! > CampaignID 4d4f7abe-6e69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:59:47.8031 Integration > Cursos > LocalLoad: FAILED! > CampaignID 1aa23f3e-6f69-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:59:47.8231 Integration > Cursos > LocalLoad: FAILED! > CampaignID bfc604dd-166a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:59:47.8231 Integration > Cursos > LocalLoad: FAILED! > CampaignID 0927c8e5-1f6a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:59:47.8231 Integration > Cursos > LocalLoad: FAILED! > CampaignID 79ae5ce5-df6a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:59:47.8431 Integration > Cursos > LocalLoad: FAILED! > CampaignID a6c5e1dd-e06a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:59:47.8531 Integration > Cursos > LocalLoad: FAILED! > CampaignID 7105ba2e-e36a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:59:47.8531 Integration > Cursos > LocalLoad: FAILED! > CampaignID dc48fd27-e56a-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:59:47.8531 Integration > Cursos > LocalLoad: FAILED! > CampaignID a26e61d0-886c-e211-9ce9-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:59:47.8731 Integration > Cursos > LocalLoad: FAILED! > CampaignID bc1d59be-9c6f-e211-9fab-001e908e9d61 | String was not recognized as a valid DateTime.
+2013-05-07 09:59:48.0032 Integration > Cursos > LocalSave: FAILED! > CampaignID c78b9b39-766c-e211-9ce9-001e908e9d61 | SqlDbType.SmallDateTime overflow.  Value '10/31/2103 10:00:00' is out of range.  Must be between 1/1/1900 12:00:00 AM and 6/6/2079 11:59:59 PM.
