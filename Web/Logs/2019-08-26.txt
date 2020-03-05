@@ -1,0 +1,2 @@
+2019-08-26 09:46:20.0334 Integration > Cursos: FAILED! > No es posible conectar con el servidor remoto
+2019-08-26 15:03:44.1524 Integration > Cursos: FAILED! > No es posible conectar con el servidor remoto

@@ -1,0 +1,72 @@
+2015-02-04 09:51:21.1840 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-02-04 09:54:01.2223 System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.ThrowHelper.ThrowKeyNotFoundException()
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Microsoft.Crm.Sdk.PropertyCollection.get_Item(String propertyName)
+   at Microsoft.Crm.Sdk.DynamicEntity.get_Item(String propertyName)
+   at Camarco.Web.Controllers.TemplatesController.Facturacion() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 515
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-02-04 09:54:41.9104 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-02-04 09:56:54.9487 System.NullReferenceException: Object reference not set to an instance of an object.
+   at Camarco.Web.Controllers.TemplatesController.Facturacion() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 528
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-02-04 10:00:58.1342 System.FormatException: Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).
+   at System.Guid..ctor(String g)
+   at Camarco.Tools.CRM.CRMHelper.UpdateContacto(String contacto, String nombre, String apellido, String mail, String dni, String tel, String cel, String dirCalle, Int32 dirNumero, String dirPiso, String dirDepto, String city, String idCargo, String sexo, String idArea, String idTipoDir, String ano, String mes, String dia, String idTitulo, String idEmpresa) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 783
+   at Camarco.Web.Controllers.TemplatesController.Confirmacion() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 738
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-02-04 10:01:53.4291 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-02-04 10:07:21.3296 System.FormatException: Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).
+   at System.Guid..ctor(String g)
+   at Camarco.Tools.CRM.CRMHelper.UpdateContacto(String contacto, String nombre, String apellido, String mail, String dni, String tel, String cel, String dirCalle, Int32 dirNumero, String dirPiso, String dirDepto, String city, String idCargo, String idEmpresa, String sexo, String idArea, String idTipoDir, String ano, String mes, String dia, String idTitulo) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 799
+   at Camarco.Web.Controllers.TemplatesController.Confirmacion() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 738
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-02-04 10:07:42.4865 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-02-04 11:00:56.3029 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-02-04 11:03:38.0029 System.NullReferenceException: Object reference not set to an instance of an object.
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 541
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-02-04 11:11:39.8123 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-02-04 11:29:20.2995 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-02-04 11:38:17.4773 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-02-04 11:51:58.2142 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.

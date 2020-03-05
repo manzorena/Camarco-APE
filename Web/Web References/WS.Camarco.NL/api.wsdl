@@ -1,0 +1,3921 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://api.gbcorreo.net/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s1="http://api.gbcorreo.net/AbstractTypes" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://api.gbcorreo.net/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://api.gbcorreo.net/">
+      <s:element name="GetLastError">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetLastErrorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetLastErrorResult" type="tns:ErrorResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ErrorResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Group.Create">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GroupName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParentGroupID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GroupDescription" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsPublic" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="PublicName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Group.CreateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Group.CreateResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SimpleCampaign">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CampaignID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CategoryID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Created" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Modified" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Guid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MessageID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="StatusCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Subject" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NameFrom" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MailFrom" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MailReplyTo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HTMLContent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TEXTContent" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Language" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="HTMLOpenTracking" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="HTMLClickTracking" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="TextClickTracking" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClickTrackingExceptions" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContentType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Charset" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MimeEncoding" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ContactStatus">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="StatusCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusDescription" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Contact">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ContactID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PersonalID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Birthday" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cellphone" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="StatusCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusDescription" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateCreated" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastActivity" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomField1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomField2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomField3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomField4" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomField5" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomField6" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomField7" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomField8" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomField9" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomField10" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomField11" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomField12" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomField13" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomField14" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomField15" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomField16" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomField17" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomField18" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomField19" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomField20" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Group">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="GroupID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GroupName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ParentGroupID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GroupDescription" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CActives" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CDesactived" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CUnsubscribed" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CComplaints" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CBounced" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CUnconfirmed" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsPublic" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="PublicName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateCreated" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="GroupType" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Group.Delete">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GroupID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Group.DeleteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Group.DeleteResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Group.Update">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GroupID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GroupName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParentGroupID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GroupDescription" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsPublic" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="PublicName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Group.UpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Group.UpdateResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Group.GetDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GroupID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Group.GetDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Group.GetDetailResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Group.GetAll">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PageNumber" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PageSize" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Group.GetAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Group.GetAllResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.Add">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Groups" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fields" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Contact.AddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contact.AddResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.Update">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fields" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="Groups" type="tns:ArrayOfString" />
+            <s:element minOccurs="1" maxOccurs="1" name="ReplaceGroups" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.UpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contact.UpdateResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.UpdateById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ContactID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fields" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="Groups" type="tns:ArrayOfString" />
+            <s:element minOccurs="1" maxOccurs="1" name="ReplaceGroups" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.UpdateByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contact.UpdateByIdResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.AddOrUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fields" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="Groups" type="tns:ArrayOfString" />
+            <s:element minOccurs="1" maxOccurs="1" name="ReplaceGroups" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.AddOrUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contact.AddOrUpdateResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.AddOrUpdateById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ContactID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fields" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="Groups" type="tns:ArrayOfString" />
+            <s:element minOccurs="1" maxOccurs="1" name="ReplaceGroups" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.AddOrUpdateByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contact.AddOrUpdateByIdResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.Unsubscribe">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.UnsubscribeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contact.UnsubscribeResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.Delete">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.DeleteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contact.DeleteResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.DeleteById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ContactID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.DeleteByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contact.DeleteByIdResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.GetDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.GetDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contact.GetDetailResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.GetDetailById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ContactID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.GetDetailByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contact.GetDetailByIdResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.GetActivity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MessageID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="TypesOfActivities" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.GetActivityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contact.GetActivityResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.GetActivityById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ContactID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MessageID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="TypesOfActivities" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.GetActivityByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contact.GetActivityByIdResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.GetGroups">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.GetGroupsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contact.GetGroupsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.GetGroupsById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ContactID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.GetGroupsByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contact.GetGroupsByIdResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.GetAll">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GroupID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OrderBy" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PageNumber" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PageSize" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.GetAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contact.GetAllResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.GetStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.GetStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contact.GetStatusResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.GetStatusById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ContactID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.GetStatusByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contact.GetStatusByIdResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.Activate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.ActivateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contact.ActivateResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.ActivateById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ContactID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.ActivateByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contact.ActivateByIdResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.Deactivate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.DeactivateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contact.DeactivateResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.DeactivateById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ContactID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contact.DeactivateByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contact.DeactivateByIdResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Field.AddOrUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomFieldName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomFieldContent" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Field.AddOrUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Field.AddOrUpdateResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleCampaign.GetAll">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CategoryID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="StatusCode" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="FromDateCreated" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PageNumber" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PageSize" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleCampaign.GetAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SimpleCampaign.GetAllResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleCampaign.Create">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CategoryID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Subject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NameFrom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MailFrom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MailReplyTo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HTMLContent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TEXTContent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TargetGroupsIDs" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Language" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="HTMLOpenTracking" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="HTMLClickTracking" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="TextClickTracking" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClickTrackingExceptions" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ContentType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Charset" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MimeEncoding" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleCampaign.CreateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SimpleCampaign.CreateResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleCampaign.Update">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CampaignID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CategoryID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Subject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NameFrom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MailFrom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MailReplyTo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HTMLContent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TEXTContent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TargetGroupsIDs" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Language" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="HTMLOpenTracking" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="HTMLClickTracking" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="TextClickTracking" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClickTrackingExceptions" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ContentType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Charset" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MimeEncoding" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleCampaign.UpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SimpleCampaign.UpdateResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleCampaign.Delete">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CampaignID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleCampaign.DeleteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SimpleCampaign.DeleteResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleCampaign.Send">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CampaignID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleCampaign.SendResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SimpleCampaign.SendResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleCampaign.Schedule">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CampaignID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ScheduleTime" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleCampaign.ScheduleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SimpleCampaign.ScheduleResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleCampaign.GetDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CampaignID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleCampaign.GetDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SimpleCampaign.GetDetailResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleCampaign.ReportRecipients">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CampaignID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PageNumber" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PageSize" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleCampaign.ReportRecipientsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SimpleCampaign.ReportRecipientsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleCampaign.ReportUniqueOpens">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CampaignID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PageNumber" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PageSize" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleCampaign.ReportUniqueOpensResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SimpleCampaign.ReportUniqueOpensResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleCampaign.ReportUniqueClicks">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CampaignID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PageNumber" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PageSize" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleCampaign.ReportUniqueClicksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SimpleCampaign.ReportUniqueClicksResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Test">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ErrorResult" type="tns:ErrorResult" />
+      <s:element name="anyType" nillable="true" />
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema" />
+            <s:any />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema targetNamespace="http://api.gbcorreo.net/AbstractTypes">
+      <s:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <s:complexType name="StringArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="String" type="s:string" />
+            </s:sequence>
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetLastErrorSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLastError" />
+  </wsdl:message>
+  <wsdl:message name="GetLastErrorSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLastErrorResponse" />
+  </wsdl:message>
+  <wsdl:message name="Group.CreateSoapIn">
+    <wsdl:part name="parameters" element="tns:Group.Create" />
+  </wsdl:message>
+  <wsdl:message name="Group.CreateSoapOut">
+    <wsdl:part name="parameters" element="tns:Group.CreateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Group.DeleteSoapIn">
+    <wsdl:part name="parameters" element="tns:Group.Delete" />
+  </wsdl:message>
+  <wsdl:message name="Group.DeleteSoapOut">
+    <wsdl:part name="parameters" element="tns:Group.DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="Group.UpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:Group.Update" />
+  </wsdl:message>
+  <wsdl:message name="Group.UpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:Group.UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Group.GetDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:Group.GetDetail" />
+  </wsdl:message>
+  <wsdl:message name="Group.GetDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:Group.GetDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="Group.GetAllSoapIn">
+    <wsdl:part name="parameters" element="tns:Group.GetAll" />
+  </wsdl:message>
+  <wsdl:message name="Group.GetAllSoapOut">
+    <wsdl:part name="parameters" element="tns:Group.GetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="Contact.AddSoapIn">
+    <wsdl:part name="parameters" element="tns:Contact.Add" />
+  </wsdl:message>
+  <wsdl:message name="Contact.AddSoapOut">
+    <wsdl:part name="parameters" element="tns:Contact.AddResponse" />
+  </wsdl:message>
+  <wsdl:message name="Contact.UpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:Contact.Update" />
+  </wsdl:message>
+  <wsdl:message name="Contact.UpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:Contact.UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Contact.UpdateByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:Contact.UpdateById" />
+  </wsdl:message>
+  <wsdl:message name="Contact.UpdateByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:Contact.UpdateByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Contact.AddOrUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:Contact.AddOrUpdate" />
+  </wsdl:message>
+  <wsdl:message name="Contact.AddOrUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:Contact.AddOrUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Contact.AddOrUpdateByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:Contact.AddOrUpdateById" />
+  </wsdl:message>
+  <wsdl:message name="Contact.AddOrUpdateByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:Contact.AddOrUpdateByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Contact.UnsubscribeSoapIn">
+    <wsdl:part name="parameters" element="tns:Contact.Unsubscribe" />
+  </wsdl:message>
+  <wsdl:message name="Contact.UnsubscribeSoapOut">
+    <wsdl:part name="parameters" element="tns:Contact.UnsubscribeResponse" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeleteSoapIn">
+    <wsdl:part name="parameters" element="tns:Contact.Delete" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeleteSoapOut">
+    <wsdl:part name="parameters" element="tns:Contact.DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeleteByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:Contact.DeleteById" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeleteByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:Contact.DeleteByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:Contact.GetDetail" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:Contact.GetDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetDetailByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:Contact.GetDetailById" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetDetailByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:Contact.GetDetailByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetActivitySoapIn">
+    <wsdl:part name="parameters" element="tns:Contact.GetActivity" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetActivitySoapOut">
+    <wsdl:part name="parameters" element="tns:Contact.GetActivityResponse" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetActivityByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:Contact.GetActivityById" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetActivityByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:Contact.GetActivityByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetGroupsSoapIn">
+    <wsdl:part name="parameters" element="tns:Contact.GetGroups" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetGroupsSoapOut">
+    <wsdl:part name="parameters" element="tns:Contact.GetGroupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetGroupsByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:Contact.GetGroupsById" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetGroupsByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:Contact.GetGroupsByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetAllSoapIn">
+    <wsdl:part name="parameters" element="tns:Contact.GetAll" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetAllSoapOut">
+    <wsdl:part name="parameters" element="tns:Contact.GetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:Contact.GetStatus" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:Contact.GetStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetStatusByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:Contact.GetStatusById" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetStatusByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:Contact.GetStatusByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Contact.ActivateSoapIn">
+    <wsdl:part name="parameters" element="tns:Contact.Activate" />
+  </wsdl:message>
+  <wsdl:message name="Contact.ActivateSoapOut">
+    <wsdl:part name="parameters" element="tns:Contact.ActivateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Contact.ActivateByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:Contact.ActivateById" />
+  </wsdl:message>
+  <wsdl:message name="Contact.ActivateByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:Contact.ActivateByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeactivateSoapIn">
+    <wsdl:part name="parameters" element="tns:Contact.Deactivate" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeactivateSoapOut">
+    <wsdl:part name="parameters" element="tns:Contact.DeactivateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeactivateByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:Contact.DeactivateById" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeactivateByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:Contact.DeactivateByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Field.AddOrUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:Field.AddOrUpdate" />
+  </wsdl:message>
+  <wsdl:message name="Field.AddOrUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:Field.AddOrUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.GetAllSoapIn">
+    <wsdl:part name="parameters" element="tns:SimpleCampaign.GetAll" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.GetAllSoapOut">
+    <wsdl:part name="parameters" element="tns:SimpleCampaign.GetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.CreateSoapIn">
+    <wsdl:part name="parameters" element="tns:SimpleCampaign.Create" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.CreateSoapOut">
+    <wsdl:part name="parameters" element="tns:SimpleCampaign.CreateResponse" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.UpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:SimpleCampaign.Update" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.UpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:SimpleCampaign.UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.DeleteSoapIn">
+    <wsdl:part name="parameters" element="tns:SimpleCampaign.Delete" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.DeleteSoapOut">
+    <wsdl:part name="parameters" element="tns:SimpleCampaign.DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.SendSoapIn">
+    <wsdl:part name="parameters" element="tns:SimpleCampaign.Send" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.SendSoapOut">
+    <wsdl:part name="parameters" element="tns:SimpleCampaign.SendResponse" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ScheduleSoapIn">
+    <wsdl:part name="parameters" element="tns:SimpleCampaign.Schedule" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ScheduleSoapOut">
+    <wsdl:part name="parameters" element="tns:SimpleCampaign.ScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.GetDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:SimpleCampaign.GetDetail" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.GetDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:SimpleCampaign.GetDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ReportRecipientsSoapIn">
+    <wsdl:part name="parameters" element="tns:SimpleCampaign.ReportRecipients" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ReportRecipientsSoapOut">
+    <wsdl:part name="parameters" element="tns:SimpleCampaign.ReportRecipientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ReportUniqueOpensSoapIn">
+    <wsdl:part name="parameters" element="tns:SimpleCampaign.ReportUniqueOpens" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ReportUniqueOpensSoapOut">
+    <wsdl:part name="parameters" element="tns:SimpleCampaign.ReportUniqueOpensResponse" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ReportUniqueClicksSoapIn">
+    <wsdl:part name="parameters" element="tns:SimpleCampaign.ReportUniqueClicks" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ReportUniqueClicksSoapOut">
+    <wsdl:part name="parameters" element="tns:SimpleCampaign.ReportUniqueClicksResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestSoapIn">
+    <wsdl:part name="parameters" element="tns:Test" />
+  </wsdl:message>
+  <wsdl:message name="TestSoapOut">
+    <wsdl:part name="parameters" element="tns:TestResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLastErrorHttpGetIn" />
+  <wsdl:message name="GetLastErrorHttpGetOut">
+    <wsdl:part name="Body" element="tns:ErrorResult" />
+  </wsdl:message>
+  <wsdl:message name="Group.CreateHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="GroupName" type="s:string" />
+    <wsdl:part name="ParentGroupID" type="s:string" />
+    <wsdl:part name="GroupDescription" type="s:string" />
+    <wsdl:part name="IsPublic" type="s:string" />
+    <wsdl:part name="PublicName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Group.CreateHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Group.DeleteHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="GroupID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Group.DeleteHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Group.UpdateHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="GroupID" type="s:string" />
+    <wsdl:part name="GroupName" type="s:string" />
+    <wsdl:part name="ParentGroupID" type="s:string" />
+    <wsdl:part name="GroupDescription" type="s:string" />
+    <wsdl:part name="IsPublic" type="s:string" />
+    <wsdl:part name="PublicName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Group.UpdateHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Group.GetDetailHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="GroupID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Group.GetDetailHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Group.GetAllHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="PageNumber" type="s:string" />
+    <wsdl:part name="PageSize" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Group.GetAllHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Contact.AddHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+    <wsdl:part name="Groups" type="s1:StringArray" />
+    <wsdl:part name="Fields" type="s1:StringArray" />
+  </wsdl:message>
+  <wsdl:message name="Contact.AddHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.UpdateHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+    <wsdl:part name="Fields" type="s1:StringArray" />
+    <wsdl:part name="Groups" type="s1:StringArray" />
+    <wsdl:part name="ReplaceGroups" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.UpdateHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.UpdateByIdHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="ContactID" type="s:string" />
+    <wsdl:part name="Fields" type="s1:StringArray" />
+    <wsdl:part name="Groups" type="s1:StringArray" />
+    <wsdl:part name="ReplaceGroups" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.UpdateByIdHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.AddOrUpdateHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+    <wsdl:part name="Fields" type="s1:StringArray" />
+    <wsdl:part name="Groups" type="s1:StringArray" />
+    <wsdl:part name="ReplaceGroups" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.AddOrUpdateHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.AddOrUpdateByIdHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="ContactID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+    <wsdl:part name="Fields" type="s1:StringArray" />
+    <wsdl:part name="Groups" type="s1:StringArray" />
+    <wsdl:part name="ReplaceGroups" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.AddOrUpdateByIdHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.UnsubscribeHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.UnsubscribeHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeleteHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeleteHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeleteByIdHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="ContactID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeleteByIdHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetDetailHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetDetailHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetDetailByIdHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="ContactID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetDetailByIdHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetActivityHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+    <wsdl:part name="MessageID" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="TypesOfActivities" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetActivityHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetActivityByIdHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="ContactID" type="s:string" />
+    <wsdl:part name="MessageID" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="TypesOfActivities" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetActivityByIdHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetGroupsHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetGroupsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetGroupsByIdHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="ContactID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetGroupsByIdHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetAllHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="GroupID" type="s:string" />
+    <wsdl:part name="OrderBy" type="s:string" />
+    <wsdl:part name="PageNumber" type="s:string" />
+    <wsdl:part name="PageSize" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetAllHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetStatusHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetStatusHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetStatusByIdHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="ContactID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetStatusByIdHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.ActivateHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.ActivateHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.ActivateByIdHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="ContactID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.ActivateByIdHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeactivateHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeactivateHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeactivateByIdHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="ContactID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeactivateByIdHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Field.AddOrUpdateHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+    <wsdl:part name="CustomFieldName" type="s:string" />
+    <wsdl:part name="CustomFieldContent" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Field.AddOrUpdateHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.GetAllHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="CategoryID" type="s:string" />
+    <wsdl:part name="StatusCode" type="s:string" />
+    <wsdl:part name="FromDateCreated" type="s:string" />
+    <wsdl:part name="PageNumber" type="s:string" />
+    <wsdl:part name="PageSize" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.GetAllHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.CreateHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="CategoryID" type="s:string" />
+    <wsdl:part name="Subject" type="s:string" />
+    <wsdl:part name="NameFrom" type="s:string" />
+    <wsdl:part name="MailFrom" type="s:string" />
+    <wsdl:part name="MailReplyTo" type="s:string" />
+    <wsdl:part name="HTMLContent" type="s:string" />
+    <wsdl:part name="TEXTContent" type="s:string" />
+    <wsdl:part name="TargetGroupsIDs" type="s:string" />
+    <wsdl:part name="Language" type="s:string" />
+    <wsdl:part name="HTMLOpenTracking" type="s:string" />
+    <wsdl:part name="HTMLClickTracking" type="s:string" />
+    <wsdl:part name="TextClickTracking" type="s:string" />
+    <wsdl:part name="ClickTrackingExceptions" type="s:string" />
+    <wsdl:part name="ContentType" type="s:string" />
+    <wsdl:part name="Charset" type="s:string" />
+    <wsdl:part name="MimeEncoding" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.CreateHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.UpdateHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="CampaignID" type="s:string" />
+    <wsdl:part name="CategoryID" type="s:string" />
+    <wsdl:part name="Subject" type="s:string" />
+    <wsdl:part name="NameFrom" type="s:string" />
+    <wsdl:part name="MailFrom" type="s:string" />
+    <wsdl:part name="MailReplyTo" type="s:string" />
+    <wsdl:part name="HTMLContent" type="s:string" />
+    <wsdl:part name="TEXTContent" type="s:string" />
+    <wsdl:part name="TargetGroupsIDs" type="s:string" />
+    <wsdl:part name="Language" type="s:string" />
+    <wsdl:part name="HTMLOpenTracking" type="s:string" />
+    <wsdl:part name="HTMLClickTracking" type="s:string" />
+    <wsdl:part name="TextClickTracking" type="s:string" />
+    <wsdl:part name="ClickTrackingExceptions" type="s:string" />
+    <wsdl:part name="ContentType" type="s:string" />
+    <wsdl:part name="Charset" type="s:string" />
+    <wsdl:part name="MimeEncoding" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.UpdateHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.DeleteHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="CampaignID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.DeleteHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.SendHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="CampaignID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.SendHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ScheduleHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="CampaignID" type="s:string" />
+    <wsdl:part name="ScheduleTime" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ScheduleHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.GetDetailHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="CampaignID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.GetDetailHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ReportRecipientsHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="CampaignID" type="s:string" />
+    <wsdl:part name="PageNumber" type="s:string" />
+    <wsdl:part name="PageSize" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ReportRecipientsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ReportUniqueOpensHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="CampaignID" type="s:string" />
+    <wsdl:part name="PageNumber" type="s:string" />
+    <wsdl:part name="PageSize" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ReportUniqueOpensHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ReportUniqueClicksHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="CampaignID" type="s:string" />
+    <wsdl:part name="PageNumber" type="s:string" />
+    <wsdl:part name="PageSize" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ReportUniqueClicksHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TestHttpGetIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TestHttpGetOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="GetLastErrorHttpPostIn" />
+  <wsdl:message name="GetLastErrorHttpPostOut">
+    <wsdl:part name="Body" element="tns:ErrorResult" />
+  </wsdl:message>
+  <wsdl:message name="Group.CreateHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="GroupName" type="s:string" />
+    <wsdl:part name="ParentGroupID" type="s:string" />
+    <wsdl:part name="GroupDescription" type="s:string" />
+    <wsdl:part name="IsPublic" type="s:string" />
+    <wsdl:part name="PublicName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Group.CreateHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Group.DeleteHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="GroupID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Group.DeleteHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Group.UpdateHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="GroupID" type="s:string" />
+    <wsdl:part name="GroupName" type="s:string" />
+    <wsdl:part name="ParentGroupID" type="s:string" />
+    <wsdl:part name="GroupDescription" type="s:string" />
+    <wsdl:part name="IsPublic" type="s:string" />
+    <wsdl:part name="PublicName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Group.UpdateHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Group.GetDetailHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="GroupID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Group.GetDetailHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Group.GetAllHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="PageNumber" type="s:string" />
+    <wsdl:part name="PageSize" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Group.GetAllHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Contact.AddHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+    <wsdl:part name="Groups" type="s1:StringArray" />
+    <wsdl:part name="Fields" type="s1:StringArray" />
+  </wsdl:message>
+  <wsdl:message name="Contact.AddHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.UpdateHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+    <wsdl:part name="Fields" type="s1:StringArray" />
+    <wsdl:part name="Groups" type="s1:StringArray" />
+    <wsdl:part name="ReplaceGroups" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.UpdateHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.UpdateByIdHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="ContactID" type="s:string" />
+    <wsdl:part name="Fields" type="s1:StringArray" />
+    <wsdl:part name="Groups" type="s1:StringArray" />
+    <wsdl:part name="ReplaceGroups" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.UpdateByIdHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.AddOrUpdateHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+    <wsdl:part name="Fields" type="s1:StringArray" />
+    <wsdl:part name="Groups" type="s1:StringArray" />
+    <wsdl:part name="ReplaceGroups" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.AddOrUpdateHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.AddOrUpdateByIdHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="ContactID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+    <wsdl:part name="Fields" type="s1:StringArray" />
+    <wsdl:part name="Groups" type="s1:StringArray" />
+    <wsdl:part name="ReplaceGroups" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.AddOrUpdateByIdHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.UnsubscribeHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.UnsubscribeHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeleteHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeleteHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeleteByIdHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="ContactID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeleteByIdHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetDetailHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetDetailHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetDetailByIdHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="ContactID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetDetailByIdHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetActivityHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+    <wsdl:part name="MessageID" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="TypesOfActivities" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetActivityHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetActivityByIdHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="ContactID" type="s:string" />
+    <wsdl:part name="MessageID" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="TypesOfActivities" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetActivityByIdHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetGroupsHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetGroupsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetGroupsByIdHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="ContactID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetGroupsByIdHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetAllHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="GroupID" type="s:string" />
+    <wsdl:part name="OrderBy" type="s:string" />
+    <wsdl:part name="PageNumber" type="s:string" />
+    <wsdl:part name="PageSize" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetAllHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetStatusHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetStatusHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetStatusByIdHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="ContactID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.GetStatusByIdHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.ActivateHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.ActivateHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.ActivateByIdHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="ContactID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.ActivateByIdHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeactivateHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeactivateHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeactivateByIdHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="ContactID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Contact.DeactivateByIdHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="Field.AddOrUpdateHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+    <wsdl:part name="CustomFieldName" type="s:string" />
+    <wsdl:part name="CustomFieldContent" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Field.AddOrUpdateHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.GetAllHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="CategoryID" type="s:string" />
+    <wsdl:part name="StatusCode" type="s:string" />
+    <wsdl:part name="FromDateCreated" type="s:string" />
+    <wsdl:part name="PageNumber" type="s:string" />
+    <wsdl:part name="PageSize" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.GetAllHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.CreateHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="CategoryID" type="s:string" />
+    <wsdl:part name="Subject" type="s:string" />
+    <wsdl:part name="NameFrom" type="s:string" />
+    <wsdl:part name="MailFrom" type="s:string" />
+    <wsdl:part name="MailReplyTo" type="s:string" />
+    <wsdl:part name="HTMLContent" type="s:string" />
+    <wsdl:part name="TEXTContent" type="s:string" />
+    <wsdl:part name="TargetGroupsIDs" type="s:string" />
+    <wsdl:part name="Language" type="s:string" />
+    <wsdl:part name="HTMLOpenTracking" type="s:string" />
+    <wsdl:part name="HTMLClickTracking" type="s:string" />
+    <wsdl:part name="TextClickTracking" type="s:string" />
+    <wsdl:part name="ClickTrackingExceptions" type="s:string" />
+    <wsdl:part name="ContentType" type="s:string" />
+    <wsdl:part name="Charset" type="s:string" />
+    <wsdl:part name="MimeEncoding" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.CreateHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.UpdateHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="CampaignID" type="s:string" />
+    <wsdl:part name="CategoryID" type="s:string" />
+    <wsdl:part name="Subject" type="s:string" />
+    <wsdl:part name="NameFrom" type="s:string" />
+    <wsdl:part name="MailFrom" type="s:string" />
+    <wsdl:part name="MailReplyTo" type="s:string" />
+    <wsdl:part name="HTMLContent" type="s:string" />
+    <wsdl:part name="TEXTContent" type="s:string" />
+    <wsdl:part name="TargetGroupsIDs" type="s:string" />
+    <wsdl:part name="Language" type="s:string" />
+    <wsdl:part name="HTMLOpenTracking" type="s:string" />
+    <wsdl:part name="HTMLClickTracking" type="s:string" />
+    <wsdl:part name="TextClickTracking" type="s:string" />
+    <wsdl:part name="ClickTrackingExceptions" type="s:string" />
+    <wsdl:part name="ContentType" type="s:string" />
+    <wsdl:part name="Charset" type="s:string" />
+    <wsdl:part name="MimeEncoding" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.UpdateHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.DeleteHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="CampaignID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.DeleteHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.SendHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="CampaignID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.SendHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ScheduleHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="CampaignID" type="s:string" />
+    <wsdl:part name="ScheduleTime" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ScheduleHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.GetDetailHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="CampaignID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.GetDetailHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ReportRecipientsHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="CampaignID" type="s:string" />
+    <wsdl:part name="PageNumber" type="s:string" />
+    <wsdl:part name="PageSize" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ReportRecipientsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ReportUniqueOpensHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="CampaignID" type="s:string" />
+    <wsdl:part name="PageNumber" type="s:string" />
+    <wsdl:part name="PageSize" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ReportUniqueOpensHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ReportUniqueClicksHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+    <wsdl:part name="CampaignID" type="s:string" />
+    <wsdl:part name="PageNumber" type="s:string" />
+    <wsdl:part name="PageSize" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SimpleCampaign.ReportUniqueClicksHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TestHttpPostIn">
+    <wsdl:part name="ApiKey" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TestHttpPostOut">
+    <wsdl:part name="Body" element="tns:anyType" />
+  </wsdl:message>
+  <wsdl:portType name="api_2_1Soap">
+    <wsdl:operation name="GetLastError">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get last error</wsdl:documentation>
+      <wsdl:input message="tns:GetLastErrorSoapIn" />
+      <wsdl:output message="tns:GetLastErrorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateGroup">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create a new contact group</wsdl:documentation>
+      <wsdl:input name="Group.Create" message="tns:Group.CreateSoapIn" />
+      <wsdl:output name="Group.Create" message="tns:Group.CreateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGroup">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete contact group</wsdl:documentation>
+      <wsdl:input name="Group.Delete" message="tns:Group.DeleteSoapIn" />
+      <wsdl:output name="Group.Delete" message="tns:Group.DeleteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGroup">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update group detail</wsdl:documentation>
+      <wsdl:input name="Group.Update" message="tns:Group.UpdateSoapIn" />
+      <wsdl:output name="Group.Update" message="tns:Group.UpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get group detail</wsdl:documentation>
+      <wsdl:input name="Group.GetDetail" message="tns:Group.GetDetailSoapIn" />
+      <wsdl:output name="Group.GetDetail" message="tns:Group.GetDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllGroups">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get all groups</wsdl:documentation>
+      <wsdl:input name="Group.GetAll" message="tns:Group.GetAllSoapIn" />
+      <wsdl:output name="Group.GetAll" message="tns:Group.GetAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add contact to account</wsdl:documentation>
+      <wsdl:input name="Contact.Add" message="tns:Contact.AddSoapIn" />
+      <wsdl:output name="Contact.Add" message="tns:Contact.AddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update contact detail</wsdl:documentation>
+      <wsdl:input name="Contact.Update" message="tns:Contact.UpdateSoapIn" />
+      <wsdl:output name="Contact.Update" message="tns:Contact.UpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContactById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update contact detail</wsdl:documentation>
+      <wsdl:input name="Contact.UpdateById" message="tns:Contact.UpdateByIdSoapIn" />
+      <wsdl:output name="Contact.UpdateById" message="tns:Contact.UpdateByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add or update contact detail if exists</wsdl:documentation>
+      <wsdl:input name="Contact.AddOrUpdate" message="tns:Contact.AddOrUpdateSoapIn" />
+      <wsdl:output name="Contact.AddOrUpdate" message="tns:Contact.AddOrUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateContactById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add or update contact detail if exists</wsdl:documentation>
+      <wsdl:input name="Contact.AddOrUpdateById" message="tns:Contact.AddOrUpdateByIdSoapIn" />
+      <wsdl:output name="Contact.AddOrUpdateById" message="tns:Contact.AddOrUpdateByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UnsubscribeContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Mark contact as unsubscribed</wsdl:documentation>
+      <wsdl:input name="Contact.Unsubscribe" message="tns:Contact.UnsubscribeSoapIn" />
+      <wsdl:output name="Contact.Unsubscribe" message="tns:Contact.UnsubscribeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Permanently delete a contact</wsdl:documentation>
+      <wsdl:input name="Contact.Delete" message="tns:Contact.DeleteSoapIn" />
+      <wsdl:output name="Contact.Delete" message="tns:Contact.DeleteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContactById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Permanently delete a contact</wsdl:documentation>
+      <wsdl:input name="Contact.DeleteById" message="tns:Contact.DeleteByIdSoapIn" />
+      <wsdl:output name="Contact.DeleteById" message="tns:Contact.DeleteByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contact detail</wsdl:documentation>
+      <wsdl:input name="Contact.GetDetail" message="tns:Contact.GetDetailSoapIn" />
+      <wsdl:output name="Contact.GetDetail" message="tns:Contact.GetDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactDetailById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contact detail</wsdl:documentation>
+      <wsdl:input name="Contact.GetDetailById" message="tns:Contact.GetDetailByIdSoapIn" />
+      <wsdl:output name="Contact.GetDetailById" message="tns:Contact.GetDetailByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactActivity">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contact activity</wsdl:documentation>
+      <wsdl:input name="Contact.GetActivity" message="tns:Contact.GetActivitySoapIn" />
+      <wsdl:output name="Contact.GetActivity" message="tns:Contact.GetActivitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactActivityById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contact activity</wsdl:documentation>
+      <wsdl:input name="Contact.GetActivityById" message="tns:Contact.GetActivityByIdSoapIn" />
+      <wsdl:output name="Contact.GetActivityById" message="tns:Contact.GetActivityByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactGroups">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get the groups which the contact belongs</wsdl:documentation>
+      <wsdl:input name="Contact.GetGroups" message="tns:Contact.GetGroupsSoapIn" />
+      <wsdl:output name="Contact.GetGroups" message="tns:Contact.GetGroupsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactGroupsById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get the groups which the contact belongs</wsdl:documentation>
+      <wsdl:input name="Contact.GetGroupsById" message="tns:Contact.GetGroupsByIdSoapIn" />
+      <wsdl:output name="Contact.GetGroupsById" message="tns:Contact.GetGroupsByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllContacts">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get all contacts</wsdl:documentation>
+      <wsdl:input name="Contact.GetAll" message="tns:Contact.GetAllSoapIn" />
+      <wsdl:output name="Contact.GetAll" message="tns:Contact.GetAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contact current status</wsdl:documentation>
+      <wsdl:input name="Contact.GetStatus" message="tns:Contact.GetStatusSoapIn" />
+      <wsdl:output name="Contact.GetStatus" message="tns:Contact.GetStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactStatusById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contact current status</wsdl:documentation>
+      <wsdl:input name="Contact.GetStatusById" message="tns:Contact.GetStatusByIdSoapIn" />
+      <wsdl:output name="Contact.GetStatusById" message="tns:Contact.GetStatusByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivateContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Mark contact as Active</wsdl:documentation>
+      <wsdl:input name="Contact.Activate" message="tns:Contact.ActivateSoapIn" />
+      <wsdl:output name="Contact.Activate" message="tns:Contact.ActivateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivateContactById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Mark contact as Active</wsdl:documentation>
+      <wsdl:input name="Contact.ActivateById" message="tns:Contact.ActivateByIdSoapIn" />
+      <wsdl:output name="Contact.ActivateById" message="tns:Contact.ActivateByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Mark contact as No Active</wsdl:documentation>
+      <wsdl:input name="Contact.Deactivate" message="tns:Contact.DeactivateSoapIn" />
+      <wsdl:output name="Contact.Deactivate" message="tns:Contact.DeactivateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateContactById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Mark contact as No Active</wsdl:documentation>
+      <wsdl:input name="Contact.DeactivateById" message="tns:Contact.DeactivateByIdSoapIn" />
+      <wsdl:output name="Contact.DeactivateById" message="tns:Contact.DeactivateByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateContactField">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add or update a customer field for contact</wsdl:documentation>
+      <wsdl:input name="Field.AddOrUpdate" message="tns:Field.AddOrUpdateSoapIn" />
+      <wsdl:output name="Field.AddOrUpdate" message="tns:Field.AddOrUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSimpleCampaigns">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get all simple campaigns</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.GetAll" message="tns:SimpleCampaign.GetAllSoapIn" />
+      <wsdl:output name="SimpleCampaign.GetAll" message="tns:SimpleCampaign.GetAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateSimpleCampaign">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create a new simple campaign</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.Create" message="tns:SimpleCampaign.CreateSoapIn" />
+      <wsdl:output name="SimpleCampaign.Create" message="tns:SimpleCampaign.CreateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSimpleCampaign">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update a simple campaign</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.Update" message="tns:SimpleCampaign.UpdateSoapIn" />
+      <wsdl:output name="SimpleCampaign.Update" message="tns:SimpleCampaign.UpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSimpleCampaign">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete simple campaign</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.Delete" message="tns:SimpleCampaign.DeleteSoapIn" />
+      <wsdl:output name="SimpleCampaign.Delete" message="tns:SimpleCampaign.DeleteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSimpleCampaign">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Send inmediatly a simple campaign</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.Send" message="tns:SimpleCampaign.SendSoapIn" />
+      <wsdl:output name="SimpleCampaign.Send" message="tns:SimpleCampaign.SendSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleSimpleCampaign">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Send a simple campaign in a specified time</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.Schedule" message="tns:SimpleCampaign.ScheduleSoapIn" />
+      <wsdl:output name="SimpleCampaign.Schedule" message="tns:SimpleCampaign.ScheduleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSimpleCampaignDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get simple campaign detail</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.GetDetail" message="tns:SimpleCampaign.GetDetailSoapIn" />
+      <wsdl:output name="SimpleCampaign.GetDetail" message="tns:SimpleCampaign.GetDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReportRecipientsSimpleCampaign">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get the recipients of a campaign</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.ReportRecipients" message="tns:SimpleCampaign.ReportRecipientsSoapIn" />
+      <wsdl:output name="SimpleCampaign.ReportRecipients" message="tns:SimpleCampaign.ReportRecipientsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReportUniqueOpensSimpleCampaigns">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contacts who opened the campaign</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.ReportUniqueOpens" message="tns:SimpleCampaign.ReportUniqueOpensSoapIn" />
+      <wsdl:output name="SimpleCampaign.ReportUniqueOpens" message="tns:SimpleCampaign.ReportUniqueOpensSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReportUniqueClicksSimpleCampaigns">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contacts who clicked some link</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.ReportUniqueClicks" message="tns:SimpleCampaign.ReportUniqueClicksSoapIn" />
+      <wsdl:output name="SimpleCampaign.ReportUniqueClicks" message="tns:SimpleCampaign.ReportUniqueClicksSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Test">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Test connection with Web Service</wsdl:documentation>
+      <wsdl:input message="tns:TestSoapIn" />
+      <wsdl:output message="tns:TestSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="api_2_1HttpGet">
+    <wsdl:operation name="GetLastError">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get last error</wsdl:documentation>
+      <wsdl:input message="tns:GetLastErrorHttpGetIn" />
+      <wsdl:output message="tns:GetLastErrorHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateGroup">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create a new contact group</wsdl:documentation>
+      <wsdl:input name="Group.Create" message="tns:Group.CreateHttpGetIn" />
+      <wsdl:output name="Group.Create" message="tns:Group.CreateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGroup">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete contact group</wsdl:documentation>
+      <wsdl:input name="Group.Delete" message="tns:Group.DeleteHttpGetIn" />
+      <wsdl:output name="Group.Delete" message="tns:Group.DeleteHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGroup">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update group detail</wsdl:documentation>
+      <wsdl:input name="Group.Update" message="tns:Group.UpdateHttpGetIn" />
+      <wsdl:output name="Group.Update" message="tns:Group.UpdateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get group detail</wsdl:documentation>
+      <wsdl:input name="Group.GetDetail" message="tns:Group.GetDetailHttpGetIn" />
+      <wsdl:output name="Group.GetDetail" message="tns:Group.GetDetailHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllGroups">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get all groups</wsdl:documentation>
+      <wsdl:input name="Group.GetAll" message="tns:Group.GetAllHttpGetIn" />
+      <wsdl:output name="Group.GetAll" message="tns:Group.GetAllHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add contact to account</wsdl:documentation>
+      <wsdl:input name="Contact.Add" message="tns:Contact.AddHttpGetIn" />
+      <wsdl:output name="Contact.Add" message="tns:Contact.AddHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update contact detail</wsdl:documentation>
+      <wsdl:input name="Contact.Update" message="tns:Contact.UpdateHttpGetIn" />
+      <wsdl:output name="Contact.Update" message="tns:Contact.UpdateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContactById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update contact detail</wsdl:documentation>
+      <wsdl:input name="Contact.UpdateById" message="tns:Contact.UpdateByIdHttpGetIn" />
+      <wsdl:output name="Contact.UpdateById" message="tns:Contact.UpdateByIdHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add or update contact detail if exists</wsdl:documentation>
+      <wsdl:input name="Contact.AddOrUpdate" message="tns:Contact.AddOrUpdateHttpGetIn" />
+      <wsdl:output name="Contact.AddOrUpdate" message="tns:Contact.AddOrUpdateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateContactById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add or update contact detail if exists</wsdl:documentation>
+      <wsdl:input name="Contact.AddOrUpdateById" message="tns:Contact.AddOrUpdateByIdHttpGetIn" />
+      <wsdl:output name="Contact.AddOrUpdateById" message="tns:Contact.AddOrUpdateByIdHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UnsubscribeContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Mark contact as unsubscribed</wsdl:documentation>
+      <wsdl:input name="Contact.Unsubscribe" message="tns:Contact.UnsubscribeHttpGetIn" />
+      <wsdl:output name="Contact.Unsubscribe" message="tns:Contact.UnsubscribeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Permanently delete a contact</wsdl:documentation>
+      <wsdl:input name="Contact.Delete" message="tns:Contact.DeleteHttpGetIn" />
+      <wsdl:output name="Contact.Delete" message="tns:Contact.DeleteHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContactById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Permanently delete a contact</wsdl:documentation>
+      <wsdl:input name="Contact.DeleteById" message="tns:Contact.DeleteByIdHttpGetIn" />
+      <wsdl:output name="Contact.DeleteById" message="tns:Contact.DeleteByIdHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contact detail</wsdl:documentation>
+      <wsdl:input name="Contact.GetDetail" message="tns:Contact.GetDetailHttpGetIn" />
+      <wsdl:output name="Contact.GetDetail" message="tns:Contact.GetDetailHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactDetailById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contact detail</wsdl:documentation>
+      <wsdl:input name="Contact.GetDetailById" message="tns:Contact.GetDetailByIdHttpGetIn" />
+      <wsdl:output name="Contact.GetDetailById" message="tns:Contact.GetDetailByIdHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactActivity">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contact activity</wsdl:documentation>
+      <wsdl:input name="Contact.GetActivity" message="tns:Contact.GetActivityHttpGetIn" />
+      <wsdl:output name="Contact.GetActivity" message="tns:Contact.GetActivityHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactActivityById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contact activity</wsdl:documentation>
+      <wsdl:input name="Contact.GetActivityById" message="tns:Contact.GetActivityByIdHttpGetIn" />
+      <wsdl:output name="Contact.GetActivityById" message="tns:Contact.GetActivityByIdHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactGroups">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get the groups which the contact belongs</wsdl:documentation>
+      <wsdl:input name="Contact.GetGroups" message="tns:Contact.GetGroupsHttpGetIn" />
+      <wsdl:output name="Contact.GetGroups" message="tns:Contact.GetGroupsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactGroupsById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get the groups which the contact belongs</wsdl:documentation>
+      <wsdl:input name="Contact.GetGroupsById" message="tns:Contact.GetGroupsByIdHttpGetIn" />
+      <wsdl:output name="Contact.GetGroupsById" message="tns:Contact.GetGroupsByIdHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllContacts">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get all contacts</wsdl:documentation>
+      <wsdl:input name="Contact.GetAll" message="tns:Contact.GetAllHttpGetIn" />
+      <wsdl:output name="Contact.GetAll" message="tns:Contact.GetAllHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contact current status</wsdl:documentation>
+      <wsdl:input name="Contact.GetStatus" message="tns:Contact.GetStatusHttpGetIn" />
+      <wsdl:output name="Contact.GetStatus" message="tns:Contact.GetStatusHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactStatusById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contact current status</wsdl:documentation>
+      <wsdl:input name="Contact.GetStatusById" message="tns:Contact.GetStatusByIdHttpGetIn" />
+      <wsdl:output name="Contact.GetStatusById" message="tns:Contact.GetStatusByIdHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivateContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Mark contact as Active</wsdl:documentation>
+      <wsdl:input name="Contact.Activate" message="tns:Contact.ActivateHttpGetIn" />
+      <wsdl:output name="Contact.Activate" message="tns:Contact.ActivateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivateContactById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Mark contact as Active</wsdl:documentation>
+      <wsdl:input name="Contact.ActivateById" message="tns:Contact.ActivateByIdHttpGetIn" />
+      <wsdl:output name="Contact.ActivateById" message="tns:Contact.ActivateByIdHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Mark contact as No Active</wsdl:documentation>
+      <wsdl:input name="Contact.Deactivate" message="tns:Contact.DeactivateHttpGetIn" />
+      <wsdl:output name="Contact.Deactivate" message="tns:Contact.DeactivateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateContactById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Mark contact as No Active</wsdl:documentation>
+      <wsdl:input name="Contact.DeactivateById" message="tns:Contact.DeactivateByIdHttpGetIn" />
+      <wsdl:output name="Contact.DeactivateById" message="tns:Contact.DeactivateByIdHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateContactField">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add or update a customer field for contact</wsdl:documentation>
+      <wsdl:input name="Field.AddOrUpdate" message="tns:Field.AddOrUpdateHttpGetIn" />
+      <wsdl:output name="Field.AddOrUpdate" message="tns:Field.AddOrUpdateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSimpleCampaigns">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get all simple campaigns</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.GetAll" message="tns:SimpleCampaign.GetAllHttpGetIn" />
+      <wsdl:output name="SimpleCampaign.GetAll" message="tns:SimpleCampaign.GetAllHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateSimpleCampaign">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create a new simple campaign</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.Create" message="tns:SimpleCampaign.CreateHttpGetIn" />
+      <wsdl:output name="SimpleCampaign.Create" message="tns:SimpleCampaign.CreateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSimpleCampaign">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update a simple campaign</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.Update" message="tns:SimpleCampaign.UpdateHttpGetIn" />
+      <wsdl:output name="SimpleCampaign.Update" message="tns:SimpleCampaign.UpdateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSimpleCampaign">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete simple campaign</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.Delete" message="tns:SimpleCampaign.DeleteHttpGetIn" />
+      <wsdl:output name="SimpleCampaign.Delete" message="tns:SimpleCampaign.DeleteHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSimpleCampaign">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Send inmediatly a simple campaign</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.Send" message="tns:SimpleCampaign.SendHttpGetIn" />
+      <wsdl:output name="SimpleCampaign.Send" message="tns:SimpleCampaign.SendHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleSimpleCampaign">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Send a simple campaign in a specified time</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.Schedule" message="tns:SimpleCampaign.ScheduleHttpGetIn" />
+      <wsdl:output name="SimpleCampaign.Schedule" message="tns:SimpleCampaign.ScheduleHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSimpleCampaignDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get simple campaign detail</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.GetDetail" message="tns:SimpleCampaign.GetDetailHttpGetIn" />
+      <wsdl:output name="SimpleCampaign.GetDetail" message="tns:SimpleCampaign.GetDetailHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReportRecipientsSimpleCampaign">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get the recipients of a campaign</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.ReportRecipients" message="tns:SimpleCampaign.ReportRecipientsHttpGetIn" />
+      <wsdl:output name="SimpleCampaign.ReportRecipients" message="tns:SimpleCampaign.ReportRecipientsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReportUniqueOpensSimpleCampaigns">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contacts who opened the campaign</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.ReportUniqueOpens" message="tns:SimpleCampaign.ReportUniqueOpensHttpGetIn" />
+      <wsdl:output name="SimpleCampaign.ReportUniqueOpens" message="tns:SimpleCampaign.ReportUniqueOpensHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReportUniqueClicksSimpleCampaigns">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contacts who clicked some link</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.ReportUniqueClicks" message="tns:SimpleCampaign.ReportUniqueClicksHttpGetIn" />
+      <wsdl:output name="SimpleCampaign.ReportUniqueClicks" message="tns:SimpleCampaign.ReportUniqueClicksHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Test">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Test connection with Web Service</wsdl:documentation>
+      <wsdl:input message="tns:TestHttpGetIn" />
+      <wsdl:output message="tns:TestHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="api_2_1HttpPost">
+    <wsdl:operation name="GetLastError">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get last error</wsdl:documentation>
+      <wsdl:input message="tns:GetLastErrorHttpPostIn" />
+      <wsdl:output message="tns:GetLastErrorHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateGroup">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create a new contact group</wsdl:documentation>
+      <wsdl:input name="Group.Create" message="tns:Group.CreateHttpPostIn" />
+      <wsdl:output name="Group.Create" message="tns:Group.CreateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGroup">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete contact group</wsdl:documentation>
+      <wsdl:input name="Group.Delete" message="tns:Group.DeleteHttpPostIn" />
+      <wsdl:output name="Group.Delete" message="tns:Group.DeleteHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGroup">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update group detail</wsdl:documentation>
+      <wsdl:input name="Group.Update" message="tns:Group.UpdateHttpPostIn" />
+      <wsdl:output name="Group.Update" message="tns:Group.UpdateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get group detail</wsdl:documentation>
+      <wsdl:input name="Group.GetDetail" message="tns:Group.GetDetailHttpPostIn" />
+      <wsdl:output name="Group.GetDetail" message="tns:Group.GetDetailHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllGroups">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get all groups</wsdl:documentation>
+      <wsdl:input name="Group.GetAll" message="tns:Group.GetAllHttpPostIn" />
+      <wsdl:output name="Group.GetAll" message="tns:Group.GetAllHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add contact to account</wsdl:documentation>
+      <wsdl:input name="Contact.Add" message="tns:Contact.AddHttpPostIn" />
+      <wsdl:output name="Contact.Add" message="tns:Contact.AddHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update contact detail</wsdl:documentation>
+      <wsdl:input name="Contact.Update" message="tns:Contact.UpdateHttpPostIn" />
+      <wsdl:output name="Contact.Update" message="tns:Contact.UpdateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContactById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update contact detail</wsdl:documentation>
+      <wsdl:input name="Contact.UpdateById" message="tns:Contact.UpdateByIdHttpPostIn" />
+      <wsdl:output name="Contact.UpdateById" message="tns:Contact.UpdateByIdHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add or update contact detail if exists</wsdl:documentation>
+      <wsdl:input name="Contact.AddOrUpdate" message="tns:Contact.AddOrUpdateHttpPostIn" />
+      <wsdl:output name="Contact.AddOrUpdate" message="tns:Contact.AddOrUpdateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateContactById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add or update contact detail if exists</wsdl:documentation>
+      <wsdl:input name="Contact.AddOrUpdateById" message="tns:Contact.AddOrUpdateByIdHttpPostIn" />
+      <wsdl:output name="Contact.AddOrUpdateById" message="tns:Contact.AddOrUpdateByIdHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UnsubscribeContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Mark contact as unsubscribed</wsdl:documentation>
+      <wsdl:input name="Contact.Unsubscribe" message="tns:Contact.UnsubscribeHttpPostIn" />
+      <wsdl:output name="Contact.Unsubscribe" message="tns:Contact.UnsubscribeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Permanently delete a contact</wsdl:documentation>
+      <wsdl:input name="Contact.Delete" message="tns:Contact.DeleteHttpPostIn" />
+      <wsdl:output name="Contact.Delete" message="tns:Contact.DeleteHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContactById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Permanently delete a contact</wsdl:documentation>
+      <wsdl:input name="Contact.DeleteById" message="tns:Contact.DeleteByIdHttpPostIn" />
+      <wsdl:output name="Contact.DeleteById" message="tns:Contact.DeleteByIdHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contact detail</wsdl:documentation>
+      <wsdl:input name="Contact.GetDetail" message="tns:Contact.GetDetailHttpPostIn" />
+      <wsdl:output name="Contact.GetDetail" message="tns:Contact.GetDetailHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactDetailById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contact detail</wsdl:documentation>
+      <wsdl:input name="Contact.GetDetailById" message="tns:Contact.GetDetailByIdHttpPostIn" />
+      <wsdl:output name="Contact.GetDetailById" message="tns:Contact.GetDetailByIdHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactActivity">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contact activity</wsdl:documentation>
+      <wsdl:input name="Contact.GetActivity" message="tns:Contact.GetActivityHttpPostIn" />
+      <wsdl:output name="Contact.GetActivity" message="tns:Contact.GetActivityHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactActivityById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contact activity</wsdl:documentation>
+      <wsdl:input name="Contact.GetActivityById" message="tns:Contact.GetActivityByIdHttpPostIn" />
+      <wsdl:output name="Contact.GetActivityById" message="tns:Contact.GetActivityByIdHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactGroups">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get the groups which the contact belongs</wsdl:documentation>
+      <wsdl:input name="Contact.GetGroups" message="tns:Contact.GetGroupsHttpPostIn" />
+      <wsdl:output name="Contact.GetGroups" message="tns:Contact.GetGroupsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactGroupsById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get the groups which the contact belongs</wsdl:documentation>
+      <wsdl:input name="Contact.GetGroupsById" message="tns:Contact.GetGroupsByIdHttpPostIn" />
+      <wsdl:output name="Contact.GetGroupsById" message="tns:Contact.GetGroupsByIdHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllContacts">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get all contacts</wsdl:documentation>
+      <wsdl:input name="Contact.GetAll" message="tns:Contact.GetAllHttpPostIn" />
+      <wsdl:output name="Contact.GetAll" message="tns:Contact.GetAllHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contact current status</wsdl:documentation>
+      <wsdl:input name="Contact.GetStatus" message="tns:Contact.GetStatusHttpPostIn" />
+      <wsdl:output name="Contact.GetStatus" message="tns:Contact.GetStatusHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactStatusById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contact current status</wsdl:documentation>
+      <wsdl:input name="Contact.GetStatusById" message="tns:Contact.GetStatusByIdHttpPostIn" />
+      <wsdl:output name="Contact.GetStatusById" message="tns:Contact.GetStatusByIdHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivateContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Mark contact as Active</wsdl:documentation>
+      <wsdl:input name="Contact.Activate" message="tns:Contact.ActivateHttpPostIn" />
+      <wsdl:output name="Contact.Activate" message="tns:Contact.ActivateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivateContactById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Mark contact as Active</wsdl:documentation>
+      <wsdl:input name="Contact.ActivateById" message="tns:Contact.ActivateByIdHttpPostIn" />
+      <wsdl:output name="Contact.ActivateById" message="tns:Contact.ActivateByIdHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateContact">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Mark contact as No Active</wsdl:documentation>
+      <wsdl:input name="Contact.Deactivate" message="tns:Contact.DeactivateHttpPostIn" />
+      <wsdl:output name="Contact.Deactivate" message="tns:Contact.DeactivateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateContactById">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Mark contact as No Active</wsdl:documentation>
+      <wsdl:input name="Contact.DeactivateById" message="tns:Contact.DeactivateByIdHttpPostIn" />
+      <wsdl:output name="Contact.DeactivateById" message="tns:Contact.DeactivateByIdHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateContactField">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add or update a customer field for contact</wsdl:documentation>
+      <wsdl:input name="Field.AddOrUpdate" message="tns:Field.AddOrUpdateHttpPostIn" />
+      <wsdl:output name="Field.AddOrUpdate" message="tns:Field.AddOrUpdateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSimpleCampaigns">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get all simple campaigns</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.GetAll" message="tns:SimpleCampaign.GetAllHttpPostIn" />
+      <wsdl:output name="SimpleCampaign.GetAll" message="tns:SimpleCampaign.GetAllHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateSimpleCampaign">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create a new simple campaign</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.Create" message="tns:SimpleCampaign.CreateHttpPostIn" />
+      <wsdl:output name="SimpleCampaign.Create" message="tns:SimpleCampaign.CreateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSimpleCampaign">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update a simple campaign</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.Update" message="tns:SimpleCampaign.UpdateHttpPostIn" />
+      <wsdl:output name="SimpleCampaign.Update" message="tns:SimpleCampaign.UpdateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSimpleCampaign">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete simple campaign</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.Delete" message="tns:SimpleCampaign.DeleteHttpPostIn" />
+      <wsdl:output name="SimpleCampaign.Delete" message="tns:SimpleCampaign.DeleteHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSimpleCampaign">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Send inmediatly a simple campaign</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.Send" message="tns:SimpleCampaign.SendHttpPostIn" />
+      <wsdl:output name="SimpleCampaign.Send" message="tns:SimpleCampaign.SendHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleSimpleCampaign">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Send a simple campaign in a specified time</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.Schedule" message="tns:SimpleCampaign.ScheduleHttpPostIn" />
+      <wsdl:output name="SimpleCampaign.Schedule" message="tns:SimpleCampaign.ScheduleHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSimpleCampaignDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get simple campaign detail</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.GetDetail" message="tns:SimpleCampaign.GetDetailHttpPostIn" />
+      <wsdl:output name="SimpleCampaign.GetDetail" message="tns:SimpleCampaign.GetDetailHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReportRecipientsSimpleCampaign">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get the recipients of a campaign</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.ReportRecipients" message="tns:SimpleCampaign.ReportRecipientsHttpPostIn" />
+      <wsdl:output name="SimpleCampaign.ReportRecipients" message="tns:SimpleCampaign.ReportRecipientsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReportUniqueOpensSimpleCampaigns">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contacts who opened the campaign</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.ReportUniqueOpens" message="tns:SimpleCampaign.ReportUniqueOpensHttpPostIn" />
+      <wsdl:output name="SimpleCampaign.ReportUniqueOpens" message="tns:SimpleCampaign.ReportUniqueOpensHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReportUniqueClicksSimpleCampaigns">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contacts who clicked some link</wsdl:documentation>
+      <wsdl:input name="SimpleCampaign.ReportUniqueClicks" message="tns:SimpleCampaign.ReportUniqueClicksHttpPostIn" />
+      <wsdl:output name="SimpleCampaign.ReportUniqueClicks" message="tns:SimpleCampaign.ReportUniqueClicksHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Test">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Test connection with Web Service</wsdl:documentation>
+      <wsdl:input message="tns:TestHttpPostIn" />
+      <wsdl:output message="tns:TestHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="api_2_1Soap" type="tns:api_2_1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetLastError">
+      <soap:operation soapAction="http://api.gbcorreo.net/GetLastError" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateGroup">
+      <soap:operation soapAction="http://api.gbcorreo.net/Group.Create" style="document" />
+      <wsdl:input name="Group.Create">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Group.Create">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGroup">
+      <soap:operation soapAction="http://api.gbcorreo.net/Group.Delete" style="document" />
+      <wsdl:input name="Group.Delete">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Group.Delete">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGroup">
+      <soap:operation soapAction="http://api.gbcorreo.net/Group.Update" style="document" />
+      <wsdl:input name="Group.Update">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Group.Update">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupDetail">
+      <soap:operation soapAction="http://api.gbcorreo.net/Group.GetDetail" style="document" />
+      <wsdl:input name="Group.GetDetail">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Group.GetDetail">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllGroups">
+      <soap:operation soapAction="http://api.gbcorreo.net/Group.GetAll" style="document" />
+      <wsdl:input name="Group.GetAll">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Group.GetAll">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddContact">
+      <soap:operation soapAction="http://api.gbcorreo.net/Contact.Add" style="document" />
+      <wsdl:input name="Contact.Add">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.Add">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContact">
+      <soap:operation soapAction="http://api.gbcorreo.net/Contact.Update" style="document" />
+      <wsdl:input name="Contact.Update">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.Update">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContactById">
+      <soap:operation soapAction="http://api.gbcorreo.net/Contact.UpdateById" style="document" />
+      <wsdl:input name="Contact.UpdateById">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.UpdateById">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateContact">
+      <soap:operation soapAction="http://api.gbcorreo.net/Contact.AddOrUpdate" style="document" />
+      <wsdl:input name="Contact.AddOrUpdate">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.AddOrUpdate">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateContactById">
+      <soap:operation soapAction="http://api.gbcorreo.net/Contact.AddOrUpdateById" style="document" />
+      <wsdl:input name="Contact.AddOrUpdateById">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.AddOrUpdateById">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnsubscribeContact">
+      <soap:operation soapAction="http://api.gbcorreo.net/Contact.Unsubscribe" style="document" />
+      <wsdl:input name="Contact.Unsubscribe">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.Unsubscribe">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContact">
+      <soap:operation soapAction="http://api.gbcorreo.net/Contact.Delete" style="document" />
+      <wsdl:input name="Contact.Delete">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.Delete">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContactById">
+      <soap:operation soapAction="http://api.gbcorreo.net/Contact.DeleteById" style="document" />
+      <wsdl:input name="Contact.DeleteById">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.DeleteById">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactDetail">
+      <soap:operation soapAction="http://api.gbcorreo.net/Contact.GetDetail" style="document" />
+      <wsdl:input name="Contact.GetDetail">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetDetail">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactDetailById">
+      <soap:operation soapAction="http://api.gbcorreo.net/Contact.GetDetailById" style="document" />
+      <wsdl:input name="Contact.GetDetailById">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetDetailById">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactActivity">
+      <soap:operation soapAction="http://api.gbcorreo.net/Contact.GetActivity" style="document" />
+      <wsdl:input name="Contact.GetActivity">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetActivity">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactActivityById">
+      <soap:operation soapAction="http://api.gbcorreo.net/Contact.GetActivityById" style="document" />
+      <wsdl:input name="Contact.GetActivityById">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetActivityById">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactGroups">
+      <soap:operation soapAction="http://api.gbcorreo.net/Contact.GetGroups" style="document" />
+      <wsdl:input name="Contact.GetGroups">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetGroups">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactGroupsById">
+      <soap:operation soapAction="http://api.gbcorreo.net/Contact.GetGroupsById" style="document" />
+      <wsdl:input name="Contact.GetGroupsById">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetGroupsById">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllContacts">
+      <soap:operation soapAction="http://api.gbcorreo.net/Contact.GetAll" style="document" />
+      <wsdl:input name="Contact.GetAll">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetAll">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactStatus">
+      <soap:operation soapAction="http://api.gbcorreo.net/Contact.GetStatus" style="document" />
+      <wsdl:input name="Contact.GetStatus">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetStatus">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactStatusById">
+      <soap:operation soapAction="http://api.gbcorreo.net/Contact.GetStatusById" style="document" />
+      <wsdl:input name="Contact.GetStatusById">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetStatusById">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateContact">
+      <soap:operation soapAction="http://api.gbcorreo.net/Contact.Activate" style="document" />
+      <wsdl:input name="Contact.Activate">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.Activate">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateContactById">
+      <soap:operation soapAction="http://api.gbcorreo.net/Contact.ActivateById" style="document" />
+      <wsdl:input name="Contact.ActivateById">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.ActivateById">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateContact">
+      <soap:operation soapAction="http://api.gbcorreo.net/Contact.Deactivate" style="document" />
+      <wsdl:input name="Contact.Deactivate">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.Deactivate">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateContactById">
+      <soap:operation soapAction="http://api.gbcorreo.net/Contact.DeactivateById" style="document" />
+      <wsdl:input name="Contact.DeactivateById">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.DeactivateById">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateContactField">
+      <soap:operation soapAction="http://api.gbcorreo.net/Field.AddOrUpdate" style="document" />
+      <wsdl:input name="Field.AddOrUpdate">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Field.AddOrUpdate">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSimpleCampaigns">
+      <soap:operation soapAction="http://api.gbcorreo.net/SimpleCampaign.GetAll" style="document" />
+      <wsdl:input name="SimpleCampaign.GetAll">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.GetAll">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSimpleCampaign">
+      <soap:operation soapAction="http://api.gbcorreo.net/SimpleCampaign.Create" style="document" />
+      <wsdl:input name="SimpleCampaign.Create">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.Create">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSimpleCampaign">
+      <soap:operation soapAction="http://api.gbcorreo.net/SimpleCampaign.Update" style="document" />
+      <wsdl:input name="SimpleCampaign.Update">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.Update">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSimpleCampaign">
+      <soap:operation soapAction="http://api.gbcorreo.net/SimpleCampaign.Delete" style="document" />
+      <wsdl:input name="SimpleCampaign.Delete">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.Delete">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSimpleCampaign">
+      <soap:operation soapAction="http://api.gbcorreo.net/SimpleCampaign.Send" style="document" />
+      <wsdl:input name="SimpleCampaign.Send">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.Send">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleSimpleCampaign">
+      <soap:operation soapAction="http://api.gbcorreo.net/SimpleCampaign.Schedule" style="document" />
+      <wsdl:input name="SimpleCampaign.Schedule">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.Schedule">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSimpleCampaignDetail">
+      <soap:operation soapAction="http://api.gbcorreo.net/SimpleCampaign.GetDetail" style="document" />
+      <wsdl:input name="SimpleCampaign.GetDetail">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.GetDetail">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReportRecipientsSimpleCampaign">
+      <soap:operation soapAction="http://api.gbcorreo.net/SimpleCampaign.ReportRecipients" style="document" />
+      <wsdl:input name="SimpleCampaign.ReportRecipients">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.ReportRecipients">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReportUniqueOpensSimpleCampaigns">
+      <soap:operation soapAction="http://api.gbcorreo.net/SimpleCampaign.ReportUniqueOpens" style="document" />
+      <wsdl:input name="SimpleCampaign.ReportUniqueOpens">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.ReportUniqueOpens">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReportUniqueClicksSimpleCampaigns">
+      <soap:operation soapAction="http://api.gbcorreo.net/SimpleCampaign.ReportUniqueClicks" style="document" />
+      <wsdl:input name="SimpleCampaign.ReportUniqueClicks">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.ReportUniqueClicks">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Test">
+      <soap:operation soapAction="http://api.gbcorreo.net/Test" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="api_2_1Soap12" type="tns:api_2_1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetLastError">
+      <soap12:operation soapAction="http://api.gbcorreo.net/GetLastError" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateGroup">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Group.Create" style="document" />
+      <wsdl:input name="Group.Create">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Group.Create">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGroup">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Group.Delete" style="document" />
+      <wsdl:input name="Group.Delete">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Group.Delete">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGroup">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Group.Update" style="document" />
+      <wsdl:input name="Group.Update">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Group.Update">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupDetail">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Group.GetDetail" style="document" />
+      <wsdl:input name="Group.GetDetail">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Group.GetDetail">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllGroups">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Group.GetAll" style="document" />
+      <wsdl:input name="Group.GetAll">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Group.GetAll">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddContact">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Contact.Add" style="document" />
+      <wsdl:input name="Contact.Add">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.Add">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContact">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Contact.Update" style="document" />
+      <wsdl:input name="Contact.Update">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.Update">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContactById">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Contact.UpdateById" style="document" />
+      <wsdl:input name="Contact.UpdateById">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.UpdateById">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateContact">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Contact.AddOrUpdate" style="document" />
+      <wsdl:input name="Contact.AddOrUpdate">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.AddOrUpdate">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateContactById">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Contact.AddOrUpdateById" style="document" />
+      <wsdl:input name="Contact.AddOrUpdateById">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.AddOrUpdateById">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnsubscribeContact">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Contact.Unsubscribe" style="document" />
+      <wsdl:input name="Contact.Unsubscribe">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.Unsubscribe">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContact">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Contact.Delete" style="document" />
+      <wsdl:input name="Contact.Delete">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.Delete">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContactById">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Contact.DeleteById" style="document" />
+      <wsdl:input name="Contact.DeleteById">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.DeleteById">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactDetail">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Contact.GetDetail" style="document" />
+      <wsdl:input name="Contact.GetDetail">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetDetail">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactDetailById">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Contact.GetDetailById" style="document" />
+      <wsdl:input name="Contact.GetDetailById">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetDetailById">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactActivity">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Contact.GetActivity" style="document" />
+      <wsdl:input name="Contact.GetActivity">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetActivity">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactActivityById">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Contact.GetActivityById" style="document" />
+      <wsdl:input name="Contact.GetActivityById">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetActivityById">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactGroups">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Contact.GetGroups" style="document" />
+      <wsdl:input name="Contact.GetGroups">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetGroups">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactGroupsById">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Contact.GetGroupsById" style="document" />
+      <wsdl:input name="Contact.GetGroupsById">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetGroupsById">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllContacts">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Contact.GetAll" style="document" />
+      <wsdl:input name="Contact.GetAll">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetAll">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactStatus">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Contact.GetStatus" style="document" />
+      <wsdl:input name="Contact.GetStatus">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetStatus">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactStatusById">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Contact.GetStatusById" style="document" />
+      <wsdl:input name="Contact.GetStatusById">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetStatusById">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateContact">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Contact.Activate" style="document" />
+      <wsdl:input name="Contact.Activate">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.Activate">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateContactById">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Contact.ActivateById" style="document" />
+      <wsdl:input name="Contact.ActivateById">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.ActivateById">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateContact">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Contact.Deactivate" style="document" />
+      <wsdl:input name="Contact.Deactivate">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.Deactivate">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateContactById">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Contact.DeactivateById" style="document" />
+      <wsdl:input name="Contact.DeactivateById">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Contact.DeactivateById">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateContactField">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Field.AddOrUpdate" style="document" />
+      <wsdl:input name="Field.AddOrUpdate">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Field.AddOrUpdate">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSimpleCampaigns">
+      <soap12:operation soapAction="http://api.gbcorreo.net/SimpleCampaign.GetAll" style="document" />
+      <wsdl:input name="SimpleCampaign.GetAll">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.GetAll">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSimpleCampaign">
+      <soap12:operation soapAction="http://api.gbcorreo.net/SimpleCampaign.Create" style="document" />
+      <wsdl:input name="SimpleCampaign.Create">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.Create">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSimpleCampaign">
+      <soap12:operation soapAction="http://api.gbcorreo.net/SimpleCampaign.Update" style="document" />
+      <wsdl:input name="SimpleCampaign.Update">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.Update">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSimpleCampaign">
+      <soap12:operation soapAction="http://api.gbcorreo.net/SimpleCampaign.Delete" style="document" />
+      <wsdl:input name="SimpleCampaign.Delete">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.Delete">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSimpleCampaign">
+      <soap12:operation soapAction="http://api.gbcorreo.net/SimpleCampaign.Send" style="document" />
+      <wsdl:input name="SimpleCampaign.Send">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.Send">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleSimpleCampaign">
+      <soap12:operation soapAction="http://api.gbcorreo.net/SimpleCampaign.Schedule" style="document" />
+      <wsdl:input name="SimpleCampaign.Schedule">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.Schedule">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSimpleCampaignDetail">
+      <soap12:operation soapAction="http://api.gbcorreo.net/SimpleCampaign.GetDetail" style="document" />
+      <wsdl:input name="SimpleCampaign.GetDetail">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.GetDetail">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReportRecipientsSimpleCampaign">
+      <soap12:operation soapAction="http://api.gbcorreo.net/SimpleCampaign.ReportRecipients" style="document" />
+      <wsdl:input name="SimpleCampaign.ReportRecipients">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.ReportRecipients">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReportUniqueOpensSimpleCampaigns">
+      <soap12:operation soapAction="http://api.gbcorreo.net/SimpleCampaign.ReportUniqueOpens" style="document" />
+      <wsdl:input name="SimpleCampaign.ReportUniqueOpens">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.ReportUniqueOpens">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReportUniqueClicksSimpleCampaigns">
+      <soap12:operation soapAction="http://api.gbcorreo.net/SimpleCampaign.ReportUniqueClicks" style="document" />
+      <wsdl:input name="SimpleCampaign.ReportUniqueClicks">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.ReportUniqueClicks">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Test">
+      <soap12:operation soapAction="http://api.gbcorreo.net/Test" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="api_2_1HttpGet" type="tns:api_2_1HttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="GetLastError">
+      <http:operation location="/GetLastError" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateGroup">
+      <http:operation location="/Group.Create" />
+      <wsdl:input name="Group.Create">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Group.Create">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGroup">
+      <http:operation location="/Group.Delete" />
+      <wsdl:input name="Group.Delete">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Group.Delete">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGroup">
+      <http:operation location="/Group.Update" />
+      <wsdl:input name="Group.Update">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Group.Update">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupDetail">
+      <http:operation location="/Group.GetDetail" />
+      <wsdl:input name="Group.GetDetail">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Group.GetDetail">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllGroups">
+      <http:operation location="/Group.GetAll" />
+      <wsdl:input name="Group.GetAll">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Group.GetAll">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddContact">
+      <http:operation location="/Contact.Add" />
+      <wsdl:input name="Contact.Add">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Contact.Add">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContact">
+      <http:operation location="/Contact.Update" />
+      <wsdl:input name="Contact.Update">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Contact.Update">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContactById">
+      <http:operation location="/Contact.UpdateById" />
+      <wsdl:input name="Contact.UpdateById">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Contact.UpdateById">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateContact">
+      <http:operation location="/Contact.AddOrUpdate" />
+      <wsdl:input name="Contact.AddOrUpdate">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Contact.AddOrUpdate">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateContactById">
+      <http:operation location="/Contact.AddOrUpdateById" />
+      <wsdl:input name="Contact.AddOrUpdateById">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Contact.AddOrUpdateById">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnsubscribeContact">
+      <http:operation location="/Contact.Unsubscribe" />
+      <wsdl:input name="Contact.Unsubscribe">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Contact.Unsubscribe">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContact">
+      <http:operation location="/Contact.Delete" />
+      <wsdl:input name="Contact.Delete">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Contact.Delete">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContactById">
+      <http:operation location="/Contact.DeleteById" />
+      <wsdl:input name="Contact.DeleteById">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Contact.DeleteById">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactDetail">
+      <http:operation location="/Contact.GetDetail" />
+      <wsdl:input name="Contact.GetDetail">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetDetail">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactDetailById">
+      <http:operation location="/Contact.GetDetailById" />
+      <wsdl:input name="Contact.GetDetailById">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetDetailById">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactActivity">
+      <http:operation location="/Contact.GetActivity" />
+      <wsdl:input name="Contact.GetActivity">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetActivity">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactActivityById">
+      <http:operation location="/Contact.GetActivityById" />
+      <wsdl:input name="Contact.GetActivityById">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetActivityById">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactGroups">
+      <http:operation location="/Contact.GetGroups" />
+      <wsdl:input name="Contact.GetGroups">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetGroups">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactGroupsById">
+      <http:operation location="/Contact.GetGroupsById" />
+      <wsdl:input name="Contact.GetGroupsById">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetGroupsById">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllContacts">
+      <http:operation location="/Contact.GetAll" />
+      <wsdl:input name="Contact.GetAll">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetAll">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactStatus">
+      <http:operation location="/Contact.GetStatus" />
+      <wsdl:input name="Contact.GetStatus">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetStatus">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactStatusById">
+      <http:operation location="/Contact.GetStatusById" />
+      <wsdl:input name="Contact.GetStatusById">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetStatusById">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateContact">
+      <http:operation location="/Contact.Activate" />
+      <wsdl:input name="Contact.Activate">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Contact.Activate">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateContactById">
+      <http:operation location="/Contact.ActivateById" />
+      <wsdl:input name="Contact.ActivateById">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Contact.ActivateById">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateContact">
+      <http:operation location="/Contact.Deactivate" />
+      <wsdl:input name="Contact.Deactivate">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Contact.Deactivate">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateContactById">
+      <http:operation location="/Contact.DeactivateById" />
+      <wsdl:input name="Contact.DeactivateById">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Contact.DeactivateById">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateContactField">
+      <http:operation location="/Field.AddOrUpdate" />
+      <wsdl:input name="Field.AddOrUpdate">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Field.AddOrUpdate">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSimpleCampaigns">
+      <http:operation location="/SimpleCampaign.GetAll" />
+      <wsdl:input name="SimpleCampaign.GetAll">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.GetAll">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSimpleCampaign">
+      <http:operation location="/SimpleCampaign.Create" />
+      <wsdl:input name="SimpleCampaign.Create">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.Create">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSimpleCampaign">
+      <http:operation location="/SimpleCampaign.Update" />
+      <wsdl:input name="SimpleCampaign.Update">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.Update">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSimpleCampaign">
+      <http:operation location="/SimpleCampaign.Delete" />
+      <wsdl:input name="SimpleCampaign.Delete">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.Delete">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSimpleCampaign">
+      <http:operation location="/SimpleCampaign.Send" />
+      <wsdl:input name="SimpleCampaign.Send">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.Send">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleSimpleCampaign">
+      <http:operation location="/SimpleCampaign.Schedule" />
+      <wsdl:input name="SimpleCampaign.Schedule">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.Schedule">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSimpleCampaignDetail">
+      <http:operation location="/SimpleCampaign.GetDetail" />
+      <wsdl:input name="SimpleCampaign.GetDetail">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.GetDetail">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReportRecipientsSimpleCampaign">
+      <http:operation location="/SimpleCampaign.ReportRecipients" />
+      <wsdl:input name="SimpleCampaign.ReportRecipients">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.ReportRecipients">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReportUniqueOpensSimpleCampaigns">
+      <http:operation location="/SimpleCampaign.ReportUniqueOpens" />
+      <wsdl:input name="SimpleCampaign.ReportUniqueOpens">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.ReportUniqueOpens">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReportUniqueClicksSimpleCampaigns">
+      <http:operation location="/SimpleCampaign.ReportUniqueClicks" />
+      <wsdl:input name="SimpleCampaign.ReportUniqueClicks">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.ReportUniqueClicks">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Test">
+      <http:operation location="/Test" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="api_2_1HttpPost" type="tns:api_2_1HttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GetLastError">
+      <http:operation location="/GetLastError" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateGroup">
+      <http:operation location="/Group.Create" />
+      <wsdl:input name="Group.Create">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Group.Create">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGroup">
+      <http:operation location="/Group.Delete" />
+      <wsdl:input name="Group.Delete">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Group.Delete">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGroup">
+      <http:operation location="/Group.Update" />
+      <wsdl:input name="Group.Update">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Group.Update">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupDetail">
+      <http:operation location="/Group.GetDetail" />
+      <wsdl:input name="Group.GetDetail">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Group.GetDetail">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllGroups">
+      <http:operation location="/Group.GetAll" />
+      <wsdl:input name="Group.GetAll">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Group.GetAll">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddContact">
+      <http:operation location="/Contact.Add" />
+      <wsdl:input name="Contact.Add">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Contact.Add">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContact">
+      <http:operation location="/Contact.Update" />
+      <wsdl:input name="Contact.Update">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Contact.Update">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContactById">
+      <http:operation location="/Contact.UpdateById" />
+      <wsdl:input name="Contact.UpdateById">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Contact.UpdateById">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateContact">
+      <http:operation location="/Contact.AddOrUpdate" />
+      <wsdl:input name="Contact.AddOrUpdate">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Contact.AddOrUpdate">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateContactById">
+      <http:operation location="/Contact.AddOrUpdateById" />
+      <wsdl:input name="Contact.AddOrUpdateById">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Contact.AddOrUpdateById">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnsubscribeContact">
+      <http:operation location="/Contact.Unsubscribe" />
+      <wsdl:input name="Contact.Unsubscribe">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Contact.Unsubscribe">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContact">
+      <http:operation location="/Contact.Delete" />
+      <wsdl:input name="Contact.Delete">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Contact.Delete">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContactById">
+      <http:operation location="/Contact.DeleteById" />
+      <wsdl:input name="Contact.DeleteById">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Contact.DeleteById">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactDetail">
+      <http:operation location="/Contact.GetDetail" />
+      <wsdl:input name="Contact.GetDetail">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetDetail">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactDetailById">
+      <http:operation location="/Contact.GetDetailById" />
+      <wsdl:input name="Contact.GetDetailById">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetDetailById">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactActivity">
+      <http:operation location="/Contact.GetActivity" />
+      <wsdl:input name="Contact.GetActivity">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetActivity">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactActivityById">
+      <http:operation location="/Contact.GetActivityById" />
+      <wsdl:input name="Contact.GetActivityById">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetActivityById">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactGroups">
+      <http:operation location="/Contact.GetGroups" />
+      <wsdl:input name="Contact.GetGroups">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetGroups">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactGroupsById">
+      <http:operation location="/Contact.GetGroupsById" />
+      <wsdl:input name="Contact.GetGroupsById">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetGroupsById">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllContacts">
+      <http:operation location="/Contact.GetAll" />
+      <wsdl:input name="Contact.GetAll">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetAll">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactStatus">
+      <http:operation location="/Contact.GetStatus" />
+      <wsdl:input name="Contact.GetStatus">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetStatus">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactStatusById">
+      <http:operation location="/Contact.GetStatusById" />
+      <wsdl:input name="Contact.GetStatusById">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Contact.GetStatusById">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateContact">
+      <http:operation location="/Contact.Activate" />
+      <wsdl:input name="Contact.Activate">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Contact.Activate">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateContactById">
+      <http:operation location="/Contact.ActivateById" />
+      <wsdl:input name="Contact.ActivateById">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Contact.ActivateById">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateContact">
+      <http:operation location="/Contact.Deactivate" />
+      <wsdl:input name="Contact.Deactivate">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Contact.Deactivate">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateContactById">
+      <http:operation location="/Contact.DeactivateById" />
+      <wsdl:input name="Contact.DeactivateById">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Contact.DeactivateById">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateContactField">
+      <http:operation location="/Field.AddOrUpdate" />
+      <wsdl:input name="Field.AddOrUpdate">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="Field.AddOrUpdate">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSimpleCampaigns">
+      <http:operation location="/SimpleCampaign.GetAll" />
+      <wsdl:input name="SimpleCampaign.GetAll">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.GetAll">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSimpleCampaign">
+      <http:operation location="/SimpleCampaign.Create" />
+      <wsdl:input name="SimpleCampaign.Create">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.Create">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSimpleCampaign">
+      <http:operation location="/SimpleCampaign.Update" />
+      <wsdl:input name="SimpleCampaign.Update">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.Update">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSimpleCampaign">
+      <http:operation location="/SimpleCampaign.Delete" />
+      <wsdl:input name="SimpleCampaign.Delete">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.Delete">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSimpleCampaign">
+      <http:operation location="/SimpleCampaign.Send" />
+      <wsdl:input name="SimpleCampaign.Send">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.Send">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleSimpleCampaign">
+      <http:operation location="/SimpleCampaign.Schedule" />
+      <wsdl:input name="SimpleCampaign.Schedule">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.Schedule">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSimpleCampaignDetail">
+      <http:operation location="/SimpleCampaign.GetDetail" />
+      <wsdl:input name="SimpleCampaign.GetDetail">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.GetDetail">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReportRecipientsSimpleCampaign">
+      <http:operation location="/SimpleCampaign.ReportRecipients" />
+      <wsdl:input name="SimpleCampaign.ReportRecipients">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.ReportRecipients">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReportUniqueOpensSimpleCampaigns">
+      <http:operation location="/SimpleCampaign.ReportUniqueOpens" />
+      <wsdl:input name="SimpleCampaign.ReportUniqueOpens">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.ReportUniqueOpens">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReportUniqueClicksSimpleCampaigns">
+      <http:operation location="/SimpleCampaign.ReportUniqueClicks" />
+      <wsdl:input name="SimpleCampaign.ReportUniqueClicks">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="SimpleCampaign.ReportUniqueClicks">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Test">
+      <http:operation location="/Test" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="api_2_1">
+    <wsdl:port name="api_2_1Soap" binding="tns:api_2_1Soap">
+      <soap:address location="http://api.gbcorreo.net/2.1/api.asmx" />
+    </wsdl:port>
+    <wsdl:port name="api_2_1Soap12" binding="tns:api_2_1Soap12">
+      <soap12:address location="http://api.gbcorreo.net/2.1/api.asmx" />
+    </wsdl:port>
+    <wsdl:port name="api_2_1HttpGet" binding="tns:api_2_1HttpGet">
+      <http:address location="http://api.gbcorreo.net/2.1/api.asmx" />
+    </wsdl:port>
+    <wsdl:port name="api_2_1HttpPost" binding="tns:api_2_1HttpPost">
+      <http:address location="http://api.gbcorreo.net/2.1/api.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

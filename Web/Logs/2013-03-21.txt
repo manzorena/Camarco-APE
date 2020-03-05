@@ -1,0 +1,13 @@
+2013-03-21 11:44:23.3936 System.Exception: Seccion > Load : El ID de Seccion no existe.
+   at Camarco.Model.Seccion..ctor(Int32 pSID) in D:\My Documents\Websites\Camarco\Model\Seccion.cs:line 118
+   at Camarco.Model.Resource.LoadSecciones() in D:\My Documents\Websites\Camarco\Model\Resource.cs:line 93
+   at Camarco.Web.Areas.Adm.Controllers.DocumentoController.Editar(Int32 id) in D:\My Documents\Websites\Camarco\Web\Areas\Adm\Controllers\DocumentoController.cs:line 65
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)

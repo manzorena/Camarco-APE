@@ -1,0 +1,404 @@
+2015-01-16 09:16:30.9814 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 09:36:23.4988 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 09:57:00.6690 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Create(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.CreateContacto(String nombre, String apellido, String mail, String dni, String tel, String cel, String dirCalle, Int32 dirNumero, String dirPiso, String dirDepto, String city, String idCargo, String idEmpresa, String sexo, String fecnac, String idArea, String idTipoDir) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 468
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 396
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-01-16 10:20:50.5575 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 10:24:35.9265 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Update(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.UpdateContacto(String contacto, String nombre, String apellido, String mail, String dni, String tel, String cel, String dirCalle, Int32 dirNumero, String dirPiso, String dirDepto, String city, String idCargo, String sexo, String fecnac, String idArea, String idTipoDir) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 698
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 402
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-01-16 10:28:19.6336 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 10:30:39.0068 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Update(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.UpdateContacto(String contacto, String nombre, String apellido, String mail, String dni, String tel, String cel, String dirCalle, Int32 dirNumero, String dirPiso, String dirDepto, String city, String idCargo, String sexo, String fecnac, String idArea, String idTipoDir) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 698
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 402
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-01-16 10:35:24.0359 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 10:37:22.8513 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Update(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.UpdateContacto(String contacto, String nombre, String apellido, String mail, String dni, String tel, String cel, String dirCalle, Int32 dirNumero, String dirPiso, String dirDepto, String city, String idCargo, String sexo, String fecnac, String idArea, String idTipoDir) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 698
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 402
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-01-16 10:37:49.8317 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 10:40:05.3054 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Update(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.UpdateContacto(String contacto, String nombre, String apellido, String mail, String dni, String tel, String cel, String dirCalle, Int32 dirNumero, String dirPiso, String dirDepto, String city, String idCargo, String sexo, String fecnac, String idArea, String idTipoDir) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 698
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 402
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-01-16 10:40:28.9648 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 10:43:10.6107 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Update(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.UpdateContacto(String contacto, String nombre, String apellido, String mail, String dni, String tel, String cel, String dirCalle, Int32 dirNumero, String dirPiso, String dirDepto, String city, String idCargo, String sexo, String fecnac, String idArea, String idTipoDir) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 698
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 402
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-01-16 10:43:37.1671 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 10:47:09.0641 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Update(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.UpdateContacto(String contacto, String nombre, String apellido, String mail, String dni, String tel, String cel, String dirCalle, Int32 dirNumero, String dirPiso, String dirDepto, String city, String idCargo, String sexo, String fecnac, String idArea, String idTipoDir) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 698
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 402
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-01-16 10:48:12.0324 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 11:05:29.7405 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Update(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.UpdateContacto(String contacto, String nombre, String apellido, String mail, String dni, String tel, String cel, String dirCalle, Int32 dirNumero, String dirPiso, String dirDepto, String city, String idCargo, String sexo, String fecnac, String idArea, String idTipoDir) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 698
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 402
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-01-16 11:06:20.4105 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 11:08:18.4801 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Update(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.UpdateContacto(String contacto, String nombre, String apellido, String mail, String dni, String tel, String cel, String dirCalle, Int32 dirNumero, String dirPiso, String dirDepto, String city, String idCargo, String sexo, String fecnac, String idArea, String idTipoDir) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 698
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 402
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-01-16 11:08:53.9854 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 11:08:56.9669 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 11:13:04.2663 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Update(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.UpdateContacto(String contacto, String nombre, String apellido, String mail, String dni, String tel, String cel, String dirCalle, Int32 dirNumero, String dirPiso, String dirDepto, String city, String idCargo, String sexo, String fecnac, String idArea, String idTipoDir) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 698
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 402
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-01-16 11:13:57.3380 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 11:17:34.0706 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 11:19:48.5137 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 11:39:06.4766 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 11:42:01.3805 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Update(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.UpdateContacto(String contacto, String nombre, String apellido, String mail, String dni, String tel, String cel, String dirCalle, Int32 dirNumero, String dirPiso, String dirDepto, String city, String idCargo, String sexo, String fecnac, String idArea, String idTipoDir) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 698
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 402
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-01-16 11:42:26.2825 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 12:09:47.7622 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 12:12:30.3757 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Update(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.UpdateContacto(String contacto, String nombre, String apellido, String mail, String dni, String tel, String cel, String dirCalle, Int32 dirNumero, String dirPiso, String dirDepto, String city, String idCargo, String sexo, String fecnac, String idArea, String idTipoDir) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 698
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 402
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-01-16 12:15:57.1801 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Create(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.CreateContacto(String nombre, String apellido, String mail, String dni, String tel, String cel, String dirCalle, Int32 dirNumero, String dirPiso, String dirDepto, String city, String idCargo, String idEmpresa, String sexo, String fecnac, String idArea, String idTipoDir) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 462
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 396
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-01-16 12:17:36.8623 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 12:21:08.2714 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Create(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.CreateContacto(String nombre, String apellido, String mail, String dni, String tel, String cel, String dirCalle, Int32 dirNumero, String dirPiso, String dirDepto, String city, String idCargo, String idEmpresa, String sexo, String fecnac, String idArea, String idTipoDir) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 462
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 396
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-01-16 12:28:34.1843 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 12:30:12.0640 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Update(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.UpdateContacto(String contacto, String nombre, String apellido, String mail, String dni, String tel, String cel, String dirCalle, Int32 dirNumero, String dirPiso, String dirDepto, String city, String idCargo, String sexo, String fecnac, String idArea, String idTipoDir) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 705
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 402
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-01-16 12:33:36.0701 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Create(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.CreateContacto(String nombre, String apellido, String mail, String dni, String tel, String cel, String dirCalle, Int32 dirNumero, String dirPiso, String dirDepto, String city, String idCargo, String idEmpresa, String sexo, String fecnac, String idArea, String idTipoDir) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 469
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 396
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-01-16 12:36:00.0421 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 12:38:02.7818 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Create(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.CreateContacto(String nombre, String apellido, String mail, String dni, String tel, String cel, String dirCalle, Int32 dirNumero, String dirPiso, String dirDepto, String city, String idCargo, String idEmpresa, String sexo, String fecnac, String idArea, String idTipoDir) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 469
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 396
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-01-16 12:40:34.5099 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 13:48:40.8693 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 14:32:43.8988 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 14:42:48.5583 System.InvalidOperationException: There was an error generating the XML document. ---> System.ArgumentException: Property value must be non null.
+Parameter name: value
+   at Microsoft.Crm.Sdk.PropertyFactory.CreateInstance(String propertyName, Object value)
+   at Microsoft.Crm.Sdk.PropertyCollection.InternalGetEnumerator()
+   at Microsoft.Crm.Sdk.PropertyCollection.System.Collections.Generic.IEnumerable<Microsoft.Crm.Sdk.Property>.GetEnumerator()
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationWriterCrmService.Write28_DynamicEntity(String n, String ns, DynamicEntity o, Boolean isNullable, Boolean needType)
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationWriterCrmService.Write27_BusinessEntity(String n, String ns, BusinessEntity o, Boolean isNullable, Boolean needType)
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationWriterCrmService.Write1512_Create(Object[] p)
+   at Microsoft.Xml.Serialization.GeneratedAssembly.ArrayOfObjectSerializer27.Serialize(Object objectToSerialize, XmlSerializationWriter writer)
+   at System.Xml.Serialization.XmlSerializer.Serialize(XmlWriter xmlWriter, Object o, XmlSerializerNamespaces namespaces, String encodingStyle, String id)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlSerializer.Serialize(XmlWriter xmlWriter, Object o, XmlSerializerNamespaces namespaces, String encodingStyle, String id)
+   at System.Xml.Serialization.XmlSerializer.Serialize(XmlWriter xmlWriter, Object o, XmlSerializerNamespaces namespaces, String encodingStyle)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Serialize(SoapClientMessage message)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Create(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.AgregarRespuestaCampaña(String campaignid, String contactid, String dni, String idDelegacion, Int32 porcentajeP, Int32 porcentajeE, String cuilF, String cuitF, String razonF, String pregunta) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 359
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 439
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-01-16 14:44:24.2837 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 14:48:18.1885 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Create(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.AgregarRespuestaCampaña(String campaignid, String contactid, String dni, String idDelegacion, Int32 porcentajeP, Int32 porcentajeE, String cuilF, String cuitF, String razonF, String pregunta) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 367
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 439
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-01-16 14:48:45.2159 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 14:52:32.3037 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Create(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.AgregarRespuestaCampaña(String campaignid, String contactid, String dni, String idDelegacion, Int32 porcentajeP, Int32 porcentajeE, String cuilF, String cuitF, String razonF, String pregunta) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 367
+   at Camarco.Web.Controllers.TemplatesController.Respuesta()
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-01-16 14:55:04.7237 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 14:57:26.2848 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 15:06:38.3958 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 15:16:56.3732 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 15:23:33.1989 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Create(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.CreateContacto(String nombre, String apellido, String mail, String dni, String tel, String cel, String dirCalle, Int32 dirNumero, String dirPiso, String dirDepto, String city, String idCargo, String idEmpresa, String sexo, String fecnac, String idArea, String idTipoDir) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 513
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 409
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-01-16 15:53:10.5372 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 15:54:43.3989 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Create(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.CreateContacto(String nombre, String apellido, String mail, String dni, String tel, String cel, String dirCalle, Int32 dirNumero, String dirPiso, String dirDepto, String city, String idCargo, String idEmpresa, String sexo, String fecnac, String idArea, String idTipoDir) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 513
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 409
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-01-16 15:58:37.7505 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 16:00:50.8374 System.Web.Services.Protocols.SoapException: Server was unable to process request.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Microsoft.Crm.SdkTypeProxy.CrmService.Create(BusinessEntity entity)
+   at Camarco.Tools.CRM.CRMHelper.CreateContacto(String nombre, String apellido, String mail, String dni, String tel, String cel, String dirCalle, Int32 dirNumero, String dirPiso, String dirDepto, String city, String idCargo, String idEmpresa, String sexo, String fecnac, String idArea, String idTipoDir) in C:\Users\prisma\Desktop\Camarco\Tools\CRM\CRMHelper.cs:line 520
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 409
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2015-01-16 16:04:09.3358 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 17:18:23.4394 Integration > Cursos: FAILED! > The request failed with HTTP status 400: Bad Request.
+2015-01-16 17:59:15.0556 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: startIndex
+   at System.String.Insert(Int32 startIndex, String value)
+   at Camarco.Web.Controllers.TemplatesController.Respuesta() in C:\Users\prisma\Desktop\Camarco\Web\Controllers\TemplatesController.cs:line 328
+   at lambda_method(ExecutionScope , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<InvokeActionMethodWithFilters>b__a()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClassd.<>c__DisplayClassf.<InvokeActionMethodWithFilters>b__c()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
