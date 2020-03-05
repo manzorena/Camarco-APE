@@ -74,7 +74,7 @@ $(function ()
 
             }
         },
-        //Add the name of the node in the coreponding label  
+        //Add the name of the node in the correponding label  
         //This method is called once, on label creation.  
         onCreateLabel: function (c, b)
         {
@@ -85,7 +85,7 @@ $(function ()
             c.innerHTML = '<p><a href="' + d + '">' + b.name + "</a></p>";
             c.onclick=function(){window.location=d};
             var a = c.style;
-            a.display = "";r
+            a.display = "";
 
             c.className = 'node '+b.data.theme;
             a.border = "1px solid transparent";

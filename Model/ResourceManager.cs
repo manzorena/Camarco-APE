@@ -6,7 +6,7 @@ using System.Data;
 
 namespace Camarco.Model
 {
-    public static class ResourceManager
+	public static class ResourceManager
 	{
 		public static void Remove(int ResourceID)
 		{
